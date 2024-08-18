@@ -1,6 +1,7 @@
 import Popup from "./components/popup.js";
 import PasswordInput from "./components/password-input.js";
 import isAuth from "./components/privatePages.js";
+import isAdmin from "./components/adminPages.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 	// Menu
@@ -111,6 +112,13 @@ document.addEventListener("DOMContentLoaded", () => {
 		"/referral.html",
 		"/terms-and-conditions.html",
 	];
+	const adminRequiredPages = [
+		"/admin.html",
+		"/admin-user.html",
+		"/admin-withdrawal.html",
+		"/admin-announce.html",
+		"/admin-guide.html",
+	];
 	const publicPages = ["/sign-in.html", "/sign-up.html", "/refer.html"];
 
 	const currentPage = window.location.pathname;
@@ -118,9 +126,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (isAuth()) {
 		if (publicPages.includes(currentPage)) {
 			window.location.pathname = "/";
+		} else if (adminRequiredPages.includes(currentPage) && !isAdmin()) {
+			window.location.pathname = "/";
 		}
 	} else {
-		if (authRequiredPages.includes(currentPage)) {
+		if (
+			authRequiredPages.includes(currentPage) ||
+			adminRequiredPages.includes(currentPage)
+		) {
 			window.location.pathname = "/sign-in.html";
 		}
 	}
