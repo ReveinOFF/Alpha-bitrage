@@ -1,0 +1,334 @@
+.referral-page {
+	padding-top: 61px;
+
+	@media screen and (max-width: $desk) {
+		padding-top: h(61px);
+	}
+
+	@media (max-width: $mobile) {
+		padding-top: 20px;
+	}
+}
+
+.referral-block {
+	background: #14151b;
+	padding-top: 20px;
+
+	@media screen and (max-width: $desk) {
+		padding-top: h(20px);
+	}
+
+	@media (max-width: $mobile) {
+		padding-top: 0;
+		background: transparent;
+	}
+	
+	.referral-steps {
+		margin-bottom: 30px;
+
+		@media screen and (max-width: $desk) {
+			margin-bottom: h(30px);
+		}
+	}
+}
+
+.referral-steps {
+	display: flex;
+	border-radius: 10px;
+	background: rgba(164, 2, 205, 0.2);
+	padding: 36px;
+	justify-content: center;
+
+	@media screen and (max-width: $desk) {
+		padding: h(36px);
+	}
+
+	@media screen and (max-width: $l-tab) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 30px;
+	}
+	
+	@media screen and (max-width: $mobile) {
+		grid-template-columns: 1fr 1fr;
+		padding: 20px;
+		grid-gap: 30px 0px;
+	}
+	
+	&-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-family: $second-family;
+		font-weight: 400;
+		font-size: 24px;
+		text-align: center;
+		color: #fff;
+		position: relative;
+
+		@media screen and (max-width: $desk) {
+			font-size: h(24px);
+		}
+
+		@media screen and (max-width: $l-tab) {
+			padding-right: 70px !important; 
+		}
+
+		@media screen and (max-width: $mobile) {
+			padding-right: 0 !important;
+			font-size: 14px;
+			
+			&:nth-child(2n + 1):not(:last-child) {
+				padding-right: 30px !important;
+			}
+			
+			
+			&:nth-child(2n) {
+				padding-left: 20px !important;
+				
+				&::after {
+					display: none !important;
+				}
+			}
+			
+			&:last-child {
+				grid-column: 1 / -1;
+			}
+		}
+		
+		img {
+			margin-bottom: 15px;
+
+			@media screen and (max-width: $desk) {
+				margin-bottom: h(15px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				width: 30px;
+				margin-bottom: 10px;
+			}
+		}
+		
+		&:not(:last-child) {
+			padding-right: 75px;
+			margin-right: 30px;
+
+			@media screen and (max-width: $desk) {
+				padding-right: h(75px);
+				margin-right: h(30px);
+			}
+
+			@media screen and (max-width: $l-tab) {
+				margin-right: 0 !important;
+			}
+			
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 28px;
+				height: 44px;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAyMSAzNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMTkuMzY3NCAxNS41MTg4QzIwLjI0MjIgMTYuMzEyNSAyMC4yNDIyIDE3LjY4NzUgMTkuMzY3NCAxOC40ODEyTDMuMzQzODYgMzMuMDE4OEMyLjA1ODY1IDM0LjE4NDggLTEuNjcyOTZlLTA2IDMzLjI3MjkgLTEuNTk3MTFlLTA2IDMxLjUzNzZMLTMuMjYxOTRlLTA3IDIuNDYyNDRDLTIuNTAzNGUtMDcgMC43MjcxMDMgMi4wNTg2NSAtMC4xODQ4MTcgMy4zNDM4NiAwLjk4MTIxTDE5LjM2NzQgMTUuNTE4OFoiIGZpbGw9IiNBNDAyQ0QiIC8+Cjwvc3ZnPg==");
+				background-size: cover;
+
+				@media screen and (max-width: $desk) {
+					width: h(28px);
+					height: h(44px);
+				}
+
+				@media screen and (max-width: $desk) {
+					width: 14px;
+					height: 22px;
+				}
+			}
+		}
+	}
+}
+
+.referrals {
+
+	&-head {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+
+		@media screen and (max-width: $desk) {
+			margin-bottom: h(30px);
+		}
+
+		@media (max-width: $l-tab) {
+			flex-direction: column-reverse;
+		}
+
+		@media (max-width: $mobile) {
+			margin-bottom:8px;
+		}
+
+		&__title {
+			font-weight: 400;
+			font-size: 40px;
+			color: #fff;
+
+			@media screen and (max-width: $desk) {
+				font-size: h(40px);
+			}
+
+			@media (max-width: $l-tab) {
+				display: none;
+			}
+		}
+
+		&__total {
+			font-weight: 400;
+			font-size: 24px;
+			color: #fff;
+			margin-left: auto;
+			margin-right: 14px;
+
+			@media screen and (max-width: $desk) {
+				font-size: h(24px);
+				margin-right: h(14px);
+			}
+
+			@media (max-width: $l-tab) {
+				margin-left: 0;
+				margin-right: auto;
+				margin-top: 20px;
+			}
+
+			@media (max-width: $mobile) {
+				font-size: 12px;
+				margin-top: 20px;
+			}
+		}
+	}
+	
+	&-table {
+		margin-bottom: 60px;
+
+		@media screen and (max-width: $desk) {
+			margin-bottom: h(60px);
+		}
+
+		@media (max-width: $mobile) {
+			padding-top: 20px;
+		}
+		
+		&-head {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 20px;
+
+			@media screen and (max-width: $desk) {
+				margin-bottom: h(20px);
+			}
+
+			@media (max-width: $mobile) {
+				margin-bottom: 10px;
+			}
+			
+			span {
+				font-family: $second-family;
+				font-weight: 400;
+				font-size: 24px;
+				color: #8e94a6;
+
+				@media screen and (max-width: $desk) {
+					font-size: h(24px);
+				}
+
+				@media (max-width: $mobile) {
+					font-size: 12px;
+				}
+
+				&:first-child {
+					width: calc(730 / 1540 * 100%);
+
+					@media (max-width: $mobile) {
+						width: 33.3%;
+					}
+				}
+
+				&:nth-child(2) {
+					width: calc(730 / 1540 * 100%);
+
+					@media (max-width: $mobile) {
+						width: 33.3%;
+					}
+				}
+
+				&:nth-child(3) {
+					width: calc(150 / 1540 * 100%);
+					text-align: center;
+
+					@media (max-width: $mobile) {
+						width: 14.3%;
+					}
+				}
+			}
+		}
+		
+		&-item {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			
+			&:not(:last-child) {
+				margin-bottom: 20px;
+
+				@media screen and (max-width: $desk) {
+					margin-bottom: h(20px);
+				}
+
+				@media (max-width: $mobile) {
+					margin-bottom: 10px;
+				}
+			}
+			
+			span {
+				font-family: $second-family;
+				font-weight: 400;
+				font-size: 24px;
+				color: #fff;
+
+				@media screen and (max-width: $desk) {
+					font-size: h(24px);
+				}
+
+				@media (max-width: $mobile) {
+					font-size: 12px;
+				}
+
+				&:first-child {
+					width: calc(730 / 1540 * 100%);
+
+					@media (max-width: $mobile) {
+						width: 33.3%;
+					}
+				}
+
+				&:nth-child(2) {
+					width: calc(730 / 1540 * 100%);
+
+					@media (max-width: $mobile) {
+						width: 33.3%;
+					}
+				}
+
+				&:nth-child(3) {
+					width: calc(150 / 1540 * 100%);
+					text-align: center;
+
+					@media (max-width: $mobile) {
+						width: 14.3%;
+					}
+				}
+			}
+			
+		}
+	}
+}

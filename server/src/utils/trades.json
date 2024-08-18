@@ -1,0 +1,2067 @@
+[
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.011875",
+    "sellPrice": "0.01158",
+    "spread": 2.48
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0004406",
+    "sellPrice": "0.0004297",
+    "spread": 2.47
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00037513",
+    "sellPrice": "0.000366",
+    "spread": 2.43
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.001025",
+    "sellPrice": "0.0010001",
+    "spread": 2.43
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.0095",
+    "sellPrice": "0.00927",
+    "spread": 2.42
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0297",
+    "sellPrice": "0.02898",
+    "spread": 2.42
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.001202",
+    "sellPrice": "0.001173",
+    "spread": 2.41
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.00000000029",
+    "sellPrice": "0.000000000283",
+    "spread": 2.41
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.084",
+    "sellPrice": "0.082",
+    "spread": 2.38
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.00715",
+    "sellPrice": "0.00698",
+    "spread": 2.38
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.07027",
+    "sellPrice": "0.0686",
+    "spread": 2.38
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0801",
+    "sellPrice": "0.0782",
+    "spread": 2.37
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.003203",
+    "sellPrice": "0.003127",
+    "spread": 2.37
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.001608",
+    "sellPrice": "0.00157",
+    "spread": 2.36
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.02964",
+    "sellPrice": "0.02894",
+    "spread": 2.36
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.016405",
+    "sellPrice": "0.01602",
+    "spread": 2.35
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.000004778",
+    "sellPrice": "0.000004667",
+    "spread": 2.32
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.531",
+    "sellPrice": "0.5189",
+    "spread": 2.28
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.00141",
+    "sellPrice": "0.001378",
+    "spread": 2.27
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00141",
+    "sellPrice": "0.001378",
+    "spread": 2.27
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.003589",
+    "sellPrice": "0.00367",
+    "spread": 2.26
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.000933",
+    "sellPrice": "0.000912",
+    "spread": 2.25
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.012276",
+    "sellPrice": "0.012",
+    "spread": 2.25
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.02898",
+    "sellPrice": "0.02834",
+    "spread": 2.21
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.000679",
+    "sellPrice": "0.0006641",
+    "spread": 2.19
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0001789",
+    "sellPrice": "0.000175",
+    "spread": 2.18
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.003711",
+    "sellPrice": "0.00363",
+    "spread": 2.18
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.03475",
+    "sellPrice": "0.034",
+    "spread": 2.16
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "755.45",
+    "sellPrice": "739.24",
+    "spread": 2.15
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "1.174",
+    "sellPrice": "1.149",
+    "spread": 2.13
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0047",
+    "sellPrice": "0.0046",
+    "spread": 2.13
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.000001044",
+    "sellPrice": "0.000001022",
+    "spread": 2.11
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.001183",
+    "sellPrice": "0.001158",
+    "spread": 2.11
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.000399",
+    "sellPrice": "0.0003906",
+    "spread": 2.11
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.002288",
+    "sellPrice": "0.00224",
+    "spread": 2.1
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.1055",
+    "sellPrice": "0.1077",
+    "spread": 2.09
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.000433",
+    "sellPrice": "0.000424",
+    "spread": 2.08
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.001202",
+    "sellPrice": "0.001177",
+    "spread": 2.08
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.082",
+    "sellPrice": "0.0803",
+    "spread": 2.07
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.3321",
+    "sellPrice": "0.3253",
+    "spread": 2.05
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0688",
+    "sellPrice": "0.0702",
+    "spread": 2.03
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.01678",
+    "sellPrice": "0.01644",
+    "spread": 2.03
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0000248",
+    "sellPrice": "0.0000243",
+    "spread": 2.02
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0007297",
+    "sellPrice": "0.000715",
+    "spread": 2.01
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0008159",
+    "sellPrice": "0.0007995",
+    "spread": 2.01
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.01301",
+    "sellPrice": "0.01275",
+    "spread": 2.0
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0000004302",
+    "sellPrice": "0.0000004216",
+    "spread": 2.0
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0002464",
+    "sellPrice": "0.0002415",
+    "spread": 1.99
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.5522",
+    "sellPrice": "0.5632",
+    "spread": 1.99
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0003238",
+    "sellPrice": "0.0003174",
+    "spread": 1.98
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.05488",
+    "sellPrice": "0.0538",
+    "spread": 1.97
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "okx",
+    "buyPrice": "0.0005314",
+    "sellPrice": "0.000521",
+    "spread": 1.96
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.001181",
+    "sellPrice": "0.001158",
+    "spread": 1.95
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.01181",
+    "sellPrice": "0.01158",
+    "spread": 1.95
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.0008159",
+    "sellPrice": "0.0008",
+    "spread": 1.95
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.15453",
+    "sellPrice": "0.15153",
+    "spread": 1.94
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.01301",
+    "sellPrice": "0.01276",
+    "spread": 1.92
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.001827",
+    "sellPrice": "0.001792",
+    "spread": 1.92
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.07216",
+    "sellPrice": "0.07082",
+    "spread": 1.86
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.005647",
+    "sellPrice": "0.005542",
+    "spread": 1.86
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.05361",
+    "sellPrice": "0.05262",
+    "spread": 1.85
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.014127",
+    "sellPrice": "0.013868",
+    "spread": 1.83
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.014288",
+    "sellPrice": "0.014026",
+    "spread": 1.83
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.02408",
+    "sellPrice": "0.02364",
+    "spread": 1.83
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.05256",
+    "sellPrice": "0.0516",
+    "spread": 1.83
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.07833",
+    "sellPrice": "0.0769",
+    "spread": 1.83
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "okx",
+    "buyPrice": "0.0824",
+    "sellPrice": "0.0809",
+    "spread": 1.82
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.000001923",
+    "sellPrice": "0.000001888",
+    "spread": 1.82
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "binance",
+    "buyPrice": "1.119",
+    "sellPrice": "1.09900000",
+    "spread": 1.79
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.4079",
+    "sellPrice": "0.4006",
+    "spread": 1.79
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.000000012035",
+    "sellPrice": "0.00000001182",
+    "spread": 1.79
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.2629",
+    "sellPrice": "0.2582",
+    "spread": 1.79
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.03197",
+    "sellPrice": "0.0314",
+    "spread": 1.78
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.015018",
+    "sellPrice": "0.01475",
+    "spread": 1.78
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.017775",
+    "sellPrice": "0.017459",
+    "spread": 1.78
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.000000000284",
+    "sellPrice": "0.000000000289",
+    "spread": 1.76
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.03455",
+    "sellPrice": "0.03395",
+    "spread": 1.74
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0002457",
+    "sellPrice": "0.0002415",
+    "spread": 1.71
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "8.0842",
+    "sellPrice": "7.9479",
+    "spread": 1.69
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.001122",
+    "sellPrice": "0.001103",
+    "spread": 1.69
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.03424",
+    "sellPrice": "0.03366",
+    "spread": 1.69
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0001245",
+    "sellPrice": "0.0001224",
+    "spread": 1.69
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0001485",
+    "sellPrice": "0.000146",
+    "spread": 1.68
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0001671",
+    "sellPrice": "0.0001643",
+    "spread": 1.68
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0000004217",
+    "sellPrice": "0.0000004288",
+    "spread": 1.68
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0351",
+    "sellPrice": "0.03451",
+    "spread": 1.68
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00000001698",
+    "sellPrice": "0.000000016694",
+    "spread": 1.68
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00000008",
+    "sellPrice": "0.00000007866",
+    "spread": 1.67
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.00007413",
+    "sellPrice": "0.0000729",
+    "spread": 1.66
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0005314",
+    "sellPrice": "0.0005226",
+    "spread": 1.66
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0547",
+    "sellPrice": "0.0538",
+    "spread": 1.65
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.000665",
+    "sellPrice": "0.000676",
+    "spread": 1.65
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0007096",
+    "sellPrice": "0.0006979",
+    "spread": 1.65
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.072",
+    "sellPrice": "0.07082",
+    "spread": 1.64
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.00551",
+    "sellPrice": "0.00542",
+    "spread": 1.63
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0247",
+    "sellPrice": "0.0243",
+    "spread": 1.62
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.01119",
+    "sellPrice": "0.011009",
+    "spread": 1.62
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00751",
+    "sellPrice": "0.007388",
+    "spread": 1.62
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "5.232",
+    "sellPrice": "5.317",
+    "spread": 1.62
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.00018",
+    "sellPrice": "0.0001771",
+    "spread": 1.61
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "binance",
+    "buyPrice": "0.03455",
+    "sellPrice": "0.03400000",
+    "spread": 1.59
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0816",
+    "sellPrice": "0.0803",
+    "spread": 1.59
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.009007",
+    "sellPrice": "0.008864",
+    "spread": 1.59
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00465",
+    "sellPrice": "0.004576",
+    "spread": 1.59
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.11234",
+    "sellPrice": "0.11056",
+    "spread": 1.58
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0000002777",
+    "sellPrice": "0.0000002733",
+    "spread": 1.58
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "okx",
+    "buyPrice": "0.06584",
+    "sellPrice": "0.0648",
+    "spread": 1.58
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.01465",
+    "sellPrice": "0.01442",
+    "spread": 1.57
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.4079",
+    "sellPrice": "0.4015",
+    "spread": 1.57
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.00000006471",
+    "sellPrice": "0.0000000637",
+    "spread": 1.56
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.12347",
+    "sellPrice": "0.1254",
+    "spread": 1.56
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.02188",
+    "sellPrice": "0.02154",
+    "spread": 1.55
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0005254",
+    "sellPrice": "0.0005173",
+    "spread": 1.54
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.9795",
+    "sellPrice": "0.9645",
+    "spread": 1.53
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00198",
+    "sellPrice": "0.00195",
+    "spread": 1.52
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00555",
+    "sellPrice": "0.005466",
+    "spread": 1.51
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.005549",
+    "sellPrice": "0.005466",
+    "spread": 1.5
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.007389",
+    "sellPrice": "0.0075",
+    "spread": 1.5
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.024528",
+    "sellPrice": "0.02416",
+    "spread": 1.5
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0074",
+    "sellPrice": "0.00729",
+    "spread": 1.49
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00201",
+    "sellPrice": "0.00204",
+    "spread": 1.49
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "1.194",
+    "sellPrice": "1.1762",
+    "spread": 1.49
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.365",
+    "sellPrice": "0.3596",
+    "spread": 1.48
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.00474",
+    "sellPrice": "0.00467",
+    "spread": 1.48
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.02982",
+    "sellPrice": "0.02938",
+    "spread": 1.48
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.1827",
+    "sellPrice": "0.18",
+    "spread": 1.48
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0005036",
+    "sellPrice": "0.0004962",
+    "spread": 1.47
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "okx",
+    "buyPrice": "0.0156",
+    "sellPrice": "0.01537",
+    "spread": 1.47
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.00034",
+    "sellPrice": "0.000335",
+    "spread": 1.47
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.05487",
+    "sellPrice": "0.05407",
+    "spread": 1.46
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.002259",
+    "sellPrice": "0.002226",
+    "spread": 1.46
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.1375",
+    "sellPrice": "0.1355",
+    "spread": 1.45
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.05459",
+    "sellPrice": "0.0538",
+    "spread": 1.45
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.000001044",
+    "sellPrice": "0.000001029",
+    "spread": 1.44
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.002099",
+    "sellPrice": "0.002069",
+    "spread": 1.43
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.3648",
+    "sellPrice": "0.3596",
+    "spread": 1.43
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.01058",
+    "sellPrice": "0.01043",
+    "spread": 1.42
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0219",
+    "sellPrice": "0.02159",
+    "spread": 1.42
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.008118",
+    "sellPrice": "0.008003",
+    "spread": 1.42
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.0283",
+    "sellPrice": "0.0279",
+    "spread": 1.41
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.00071",
+    "sellPrice": "0.0007",
+    "spread": 1.41
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0007998",
+    "sellPrice": "0.0008111",
+    "spread": 1.41
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "1.1075",
+    "sellPrice": "1.092",
+    "spread": 1.4
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.003589",
+    "sellPrice": "0.003639",
+    "spread": 1.39
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.029793",
+    "sellPrice": "0.02938",
+    "spread": 1.39
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0798",
+    "sellPrice": "0.07869",
+    "spread": 1.39
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.000936",
+    "sellPrice": "0.000923",
+    "spread": 1.39
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "8.059",
+    "sellPrice": "7.9479",
+    "spread": 1.38
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0679",
+    "sellPrice": "0.06696",
+    "spread": 1.38
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0001825",
+    "sellPrice": "0.00018",
+    "spread": 1.37
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.0811",
+    "sellPrice": "0.08",
+    "spread": 1.36
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.02944",
+    "sellPrice": "0.02904",
+    "spread": 1.36
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.002938",
+    "sellPrice": "0.002898",
+    "spread": 1.36
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "binance",
+    "buyPrice": "0.1333",
+    "sellPrice": "0.13150000",
+    "spread": 1.35
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.00742",
+    "sellPrice": "0.00732",
+    "spread": 1.35
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0002665",
+    "sellPrice": "0.0002629",
+    "spread": 1.35
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "okx",
+    "buyPrice": "0.082",
+    "sellPrice": "0.0809",
+    "spread": 1.34
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.004166",
+    "sellPrice": "0.00411",
+    "spread": 1.34
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.895",
+    "sellPrice": "0.883",
+    "spread": 1.34
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.507",
+    "sellPrice": "0.5003",
+    "spread": 1.32
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.01119",
+    "sellPrice": "0.011042",
+    "spread": 1.32
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.01133",
+    "sellPrice": "0.01118",
+    "spread": 1.32
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.000356",
+    "sellPrice": "0.0003607",
+    "spread": 1.32
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.05479",
+    "sellPrice": "0.05407",
+    "spread": 1.31
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.01065",
+    "sellPrice": "0.01051",
+    "spread": 1.31
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.04648",
+    "sellPrice": "0.04587",
+    "spread": 1.31
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.1598",
+    "sellPrice": "0.1577",
+    "spread": 1.31
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "2.484",
+    "sellPrice": "2.4518",
+    "spread": 1.3
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0231",
+    "sellPrice": "0.0228",
+    "spread": 1.3
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.05016",
+    "sellPrice": "0.04951",
+    "spread": 1.3
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00746",
+    "sellPrice": "0.007363",
+    "spread": 1.3
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "binance",
+    "buyPrice": "0.1009",
+    "sellPrice": "0.09960000",
+    "spread": 1.29
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.003553",
+    "sellPrice": "0.003599",
+    "spread": 1.29
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.022035",
+    "sellPrice": "0.021751",
+    "spread": 1.29
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.007299",
+    "sellPrice": "0.007205",
+    "spread": 1.29
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.2397",
+    "sellPrice": "0.2366",
+    "spread": 1.29
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.00312",
+    "sellPrice": "0.00308",
+    "spread": 1.28
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0545",
+    "sellPrice": "0.0538",
+    "spread": 1.28
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.001256",
+    "sellPrice": "0.00124",
+    "spread": 1.27
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.7802",
+    "sellPrice": "0.7703",
+    "spread": 1.27
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.006434",
+    "sellPrice": "0.006352",
+    "spread": 1.27
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.01111",
+    "sellPrice": "0.01097",
+    "spread": 1.26
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.02219",
+    "sellPrice": "0.02191",
+    "spread": 1.26
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.02775",
+    "sellPrice": "0.0274",
+    "spread": 1.26
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "1.011701",
+    "sellPrice": "0.999",
+    "spread": 1.26
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.006723",
+    "sellPrice": "0.006638",
+    "spread": 1.26
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "binance",
+    "buyPrice": "0.0718",
+    "sellPrice": "0.07090000",
+    "spread": 1.25
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.006791",
+    "sellPrice": "0.006706",
+    "spread": 1.25
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "1.119",
+    "sellPrice": "1.1051",
+    "spread": 1.24
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.002099",
+    "sellPrice": "0.002073",
+    "spread": 1.24
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.06875",
+    "sellPrice": "0.0679",
+    "spread": 1.24
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.009372",
+    "sellPrice": "0.009256",
+    "spread": 1.24
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0005181",
+    "sellPrice": "0.0005118",
+    "spread": 1.22
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.001395",
+    "sellPrice": "0.001378",
+    "spread": 1.22
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0006492",
+    "sellPrice": "0.0006413",
+    "spread": 1.22
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.006547",
+    "sellPrice": "0.006467",
+    "spread": 1.22
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.0247",
+    "sellPrice": "0.0244",
+    "spread": 1.21
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.03787",
+    "sellPrice": "0.03741",
+    "spread": 1.21
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0718",
+    "sellPrice": "0.07094",
+    "spread": 1.2
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0006509",
+    "sellPrice": "0.0006431",
+    "spread": 1.2
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00719",
+    "sellPrice": "0.007104",
+    "spread": 1.2
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.001322",
+    "sellPrice": "0.0013061",
+    "spread": 1.2
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.1934",
+    "sellPrice": "0.1911",
+    "spread": 1.19
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.0126",
+    "sellPrice": "0.01245",
+    "spread": 1.19
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "2.481",
+    "sellPrice": "2.4518",
+    "spread": 1.18
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.365",
+    "sellPrice": "0.3607",
+    "spread": 1.18
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0338",
+    "sellPrice": "0.0342",
+    "spread": 1.18
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.011139",
+    "sellPrice": "0.011009",
+    "spread": 1.17
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.002312",
+    "sellPrice": "0.002285",
+    "spread": 1.17
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.02905",
+    "sellPrice": "0.02939",
+    "spread": 1.17
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.000197",
+    "sellPrice": "0.0001993",
+    "spread": 1.17
+  },
+  {
+    "exchangeFrom": "binance",
+    "exchangeTo": "okx",
+    "buyPrice": "0.60200000",
+    "sellPrice": "0.595",
+    "spread": 1.16
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.01465",
+    "sellPrice": "0.01448",
+    "spread": 1.16
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.01131",
+    "sellPrice": "0.01118",
+    "spread": 1.15
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.0006509",
+    "sellPrice": "0.0006434",
+    "spread": 1.15
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.1569",
+    "sellPrice": "0.1551",
+    "spread": 1.15
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.007449",
+    "sellPrice": "0.007363",
+    "spread": 1.15
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00000001187",
+    "sellPrice": "0.000000011734",
+    "spread": 1.15
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.724",
+    "sellPrice": "0.7157",
+    "spread": 1.15
+  },
+  {
+    "exchangeFrom": "binance",
+    "exchangeTo": "bybit",
+    "buyPrice": "2.48000000",
+    "sellPrice": "2.4518",
+    "spread": 1.14
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.00616",
+    "sellPrice": "0.00623",
+    "spread": 1.14
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.08484",
+    "sellPrice": "0.08387",
+    "spread": 1.14
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.1945",
+    "sellPrice": "0.1923",
+    "spread": 1.13
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.07163",
+    "sellPrice": "0.07082",
+    "spread": 1.13
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0006486",
+    "sellPrice": "0.0006413",
+    "spread": 1.13
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00971",
+    "sellPrice": "0.0096",
+    "spread": 1.13
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "okx",
+    "buyPrice": "0.00971",
+    "sellPrice": "0.0096",
+    "spread": 1.13
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "binance",
+    "buyPrice": "0.00007413",
+    "sellPrice": "0.00007330",
+    "spread": 1.12
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.03492",
+    "sellPrice": "0.03453",
+    "spread": 1.12
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.001781",
+    "sellPrice": "0.001761",
+    "spread": 1.12
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.3648",
+    "sellPrice": "0.3607",
+    "spread": 1.12
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.1607",
+    "sellPrice": "0.1589",
+    "spread": 1.12
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.1164",
+    "sellPrice": "0.1151",
+    "spread": 1.12
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.1525",
+    "sellPrice": "0.1508",
+    "spread": 1.11
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0000000963",
+    "sellPrice": "0.00000009523",
+    "spread": 1.11
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.0004331",
+    "sellPrice": "0.0004283",
+    "spread": 1.11
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "okx",
+    "buyPrice": "0.002099",
+    "sellPrice": "0.002076",
+    "spread": 1.1
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.01458",
+    "sellPrice": "0.01442",
+    "spread": 1.1
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.01004",
+    "sellPrice": "0.00993",
+    "spread": 1.1
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.00000000023619",
+    "sellPrice": "0.0000000002336",
+    "spread": 1.1
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00641",
+    "sellPrice": "0.00634",
+    "spread": 1.09
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.11234",
+    "sellPrice": "0.11111",
+    "spread": 1.09
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0064",
+    "sellPrice": "0.00647",
+    "spread": 1.09
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.007352",
+    "sellPrice": "0.007272",
+    "spread": 1.09
+  },
+  {
+    "exchangeFrom": "binance",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.01577000",
+    "sellPrice": "0.0156",
+    "spread": 1.08
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.1945",
+    "sellPrice": "0.1924",
+    "spread": 1.08
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.04353",
+    "sellPrice": "0.044",
+    "spread": 1.08
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0000381",
+    "sellPrice": "0.00003769",
+    "spread": 1.08
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00178",
+    "sellPrice": "0.001761",
+    "spread": 1.07
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "okx",
+    "buyPrice": "0.00178",
+    "sellPrice": "0.001761",
+    "spread": 1.07
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00178",
+    "sellPrice": "0.001761",
+    "spread": 1.07
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "okx",
+    "buyPrice": "0.071",
+    "sellPrice": "0.07176",
+    "spread": 1.07
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.3177",
+    "sellPrice": "0.3143",
+    "spread": 1.07
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "1.497",
+    "sellPrice": "1.481",
+    "spread": 1.07
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.002421",
+    "sellPrice": "0.002395",
+    "spread": 1.07
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.08594",
+    "sellPrice": "0.08503",
+    "spread": 1.06
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.000001033",
+    "sellPrice": "0.000001022",
+    "spread": 1.06
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.1607",
+    "sellPrice": "0.159",
+    "spread": 1.06
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.2074",
+    "sellPrice": "0.2052",
+    "spread": 1.06
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.000861",
+    "sellPrice": "0.0008519",
+    "spread": 1.06
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "58466.1",
+    "sellPrice": "57846",
+    "spread": 1.06
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0002829",
+    "sellPrice": "0.0002799",
+    "spread": 1.06
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "binance",
+    "buyPrice": "0.000146838",
+    "sellPrice": "0.00014530",
+    "spread": 1.05
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.0057",
+    "sellPrice": "0.00564",
+    "spread": 1.05
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.2192",
+    "sellPrice": "0.2169",
+    "spread": 1.05
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.2192",
+    "sellPrice": "0.2169",
+    "spread": 1.05
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.0381",
+    "sellPrice": "0.0377",
+    "spread": 1.05
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.07216",
+    "sellPrice": "0.0714",
+    "spread": 1.05
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0003704",
+    "sellPrice": "0.0003665",
+    "spread": 1.05
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.001831",
+    "sellPrice": "0.001812",
+    "spread": 1.04
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "okx",
+    "buyPrice": "0.02982",
+    "sellPrice": "0.02951",
+    "spread": 1.04
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.11172",
+    "sellPrice": "0.11056",
+    "spread": 1.04
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.071",
+    "sellPrice": "0.07174",
+    "spread": 1.04
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.01823",
+    "sellPrice": "0.01804",
+    "spread": 1.04
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.01252",
+    "sellPrice": "0.01239",
+    "spread": 1.04
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.002298",
+    "sellPrice": "0.002274",
+    "spread": 1.04
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.0020976",
+    "sellPrice": "0.002076",
+    "spread": 1.03
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.002433",
+    "sellPrice": "0.002408",
+    "spread": 1.03
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.1161",
+    "sellPrice": "0.1149",
+    "spread": 1.03
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.0006284",
+    "sellPrice": "0.0006219",
+    "spread": 1.03
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.03336",
+    "sellPrice": "0.03302",
+    "spread": 1.02
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.029793",
+    "sellPrice": "0.02949",
+    "spread": 1.02
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.0394",
+    "sellPrice": "0.039",
+    "spread": 1.02
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.0488",
+    "sellPrice": "0.0483",
+    "spread": 1.02
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.1072",
+    "sellPrice": "0.10611",
+    "spread": 1.02
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "okx",
+    "buyPrice": "0.2645",
+    "sellPrice": "0.2618",
+    "spread": 1.02
+  },
+  {
+    "exchangeFrom": "binance",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00014560",
+    "sellPrice": "0.000144125",
+    "spread": 1.01
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.0001283",
+    "sellPrice": "0.000127",
+    "spread": 1.01
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "kucoin",
+    "buyPrice": "0.02979",
+    "sellPrice": "0.02949",
+    "spread": 1.01
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.13893",
+    "sellPrice": "0.13753",
+    "spread": 1.01
+  },
+  {
+    "exchangeFrom": "okx",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.000803",
+    "sellPrice": "0.0008111",
+    "spread": 1.01
+  },
+  {
+    "exchangeFrom": "mexc",
+    "exchangeTo": "bybit",
+    "buyPrice": "0.14894",
+    "sellPrice": "0.14745",
+    "spread": 1.0
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.1593",
+    "sellPrice": "0.1577",
+    "spread": 1.0
+  },
+  {
+    "exchangeFrom": "bybit",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.00703",
+    "sellPrice": "0.0071",
+    "spread": 1.0
+  },
+  {
+    "exchangeFrom": "kucoin",
+    "exchangeTo": "mexc",
+    "buyPrice": "0.4602",
+    "sellPrice": "0.4556",
+    "spread": 1.0
+  }
+]

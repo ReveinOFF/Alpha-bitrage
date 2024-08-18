@@ -1,0 +1,12 @@
+.home-page {
+	padding-top: 30px;
+
+	@media screen and (max-width: $desk) {
+		padding-top: h(30px);
+	}
+
+	@media screen and (max-width: $mobile) {
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
+}

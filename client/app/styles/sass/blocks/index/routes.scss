@@ -1,0 +1,177 @@
+.routes-block {
+	margin-bottom: 32px;
+
+	@media screen and (max-width: $desk) {
+		margin-bottom: h(32px);
+	}
+
+	@media screen and (max-width: $mobile) {
+		margin-bottom: 16px;
+	}
+
+	.default-title {
+		margin-bottom: 35px;
+
+		@media screen and (max-width: $desk) {
+			margin-bottom: h(35px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			display: none;
+		}
+	}
+
+	&-list {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		@media screen and (max-width: $desk) {
+			gap: h(30px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 15px;
+		}
+
+		.route {
+			flex: 1;
+		}
+	}
+}
+
+.route {
+	border-radius: 5px;
+	background: #14151b;
+	padding: 20px 15px 15px 15px;
+
+	@media screen and (max-width: $desk) {
+		padding: h(20px) h(15px) h(15px) h(15px);
+	}
+
+	@media screen and (max-width: $mobile) {
+		padding: 15px;
+	}
+
+	&--premium {
+		.route-item {
+			&__icon,
+			&__name,
+			&__value {
+				filter: blur(6px);
+
+				@media screen and (max-width: $mobile) {
+					filter: blur(4px);
+				}
+			}
+
+			&__din {
+				color: #a402cd;
+			}
+		}
+	}
+
+	&-title {
+		font-weight: 400;
+		font-size: 32px;
+		color: #fff;
+		margin-bottom: 28px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media screen and (max-width: $desk) {
+			font-size: h(32px);
+			margin-bottom: h(28px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			font-size: 20px;
+			margin-bottom: 20px;
+
+			img {
+				width: 20px;
+			}
+		}
+	}
+
+	&-items {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+
+		@media screen and (max-width: $desk) {
+			gap: h(15px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			gap: 10px;
+		}
+	}
+
+	&-item {
+		display: flex;
+		align-items: center;
+
+		&__icon {
+			width: 33px;
+			height: 27px;
+			fill: #14151b;
+			margin-right: 13px;
+
+			@media screen and (max-width: $desk) {
+				width: h(33px);
+				height: h(27px);
+				margin-right: h(13px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				width: 20px;
+				height: 16px;
+				margin-right: 10px;
+			}
+		}
+
+		&__name,
+		&__value,
+		&__din {
+			font-weight: 400;
+			font-size: 20px;
+			text-align: center;
+			color: #fff;
+
+			@media screen and (max-width: $desk) {
+				font-size: h(20px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				font-size: 13px;
+			}
+		}
+
+		&__value,
+		&__din {
+			margin-left: auto;
+		}
+
+		&__din {
+			&--red {
+				color: #fd3528;
+			}
+
+			&--green {
+				color: #02cd02;
+			}
+
+			&--yellow {
+				color: #cdb902;
+			}
+
+			&--pink {
+				color: #a402cd;
+			}
+		}
+	}
+}

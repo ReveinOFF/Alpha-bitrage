@@ -1,0 +1,63 @@
+<!--#set var="title" value="Sign In" -->
+<!--#include virtual="/parts/head.html" -->
+<!--#include virtual="/icons/dist/sprites.html" -->
+<!--#include virtual="/parts/headers/non-auth-header.html" -->
+
+<style>
+	@media (max-width: 640px) {
+		.non-auth-header {
+			display: none;
+		}
+	}
+</style>
+
+<main class="page auth-page">
+	<div class="container">
+		<form class="window auth-window auth-window--login">
+			<div class="auth-window-mobile">
+				<a href="/" class="auth-window-mobile__close">
+					<svg>
+						<use xlink:href="#icon-close"></use>
+					</svg>
+				</a>
+
+				<a href="/sign-up.html" class="auth-window-mobile__link">Sign Up</a>
+			</div>
+
+			<img
+				src="images/logotype.png"
+				alt="logotype"
+				class="auth-window-logotype"
+			/>
+			<h1 class="auth-window-title">Sign In</h1>
+			<input
+				type="email"
+				name="email"
+				class="default-input"
+				placeholder="Email"
+			/>
+			<div class="password-field">
+				<input
+					autocomplete="password"
+					name="password"
+					type="password"
+					class="default-input"
+					placeholder="Password"
+				/>
+				<button type="button" class="password-field-switch">
+					<img src="images/icons/password-close.svg" alt="password" />
+				</button>
+			</div>
+			<div class="auth-window-links">
+				<span class="auth-window-links__register">
+					New here? <a href="/sign-up.html">Sign Up</a>
+				</span>
+				<a href="/">Forgot Password</a>
+			</div>
+			<button class="default-submit">Login</button>
+		</form>
+	</div>
+</main>
+
+<!--#include virtual="/parts/popups.html" -->
+<!--#include virtual="/parts/scripts.html" -->

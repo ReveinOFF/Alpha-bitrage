@@ -1,0 +1,189 @@
+<!--#set var="title" value="Execution - 1" -->
+<!--#include virtual="/parts/head.html" -->
+<!--#include virtual="/icons/dist/sprites.html" -->
+<!--#include virtual="/parts/headers/header.html" -->
+
+<main class="page execution">
+	<div class="execution-data">
+		<div class="execution-data-top">
+			<div class="tabs" data-tabs="tables">
+				<div data-tab="table-1" class="tabs-item active">All</div>
+				<div data-tab="table-2" class="tabs-item">Top</div>
+				<div data-tab="table-3" class="tabs-item">Premium</div>
+			</div>
+			<div
+				id="table-1"
+				data-tab-content="tables"
+				class="table table--pairs custom-scroll"
+			>
+				<div class="table-head">
+					<span>Pair</span>
+					<span>Buy Price</span>
+					<span>Sell Price</span>
+					<span>Buy/Sell</span>
+					<span>% Profit</span>
+					<span>Volume</span>
+				</div>
+				<div class="table-body"></div>
+			</div>
+			<div
+				id="table-2"
+				data-tab-content="tables"
+				class="table table--pairs custom-scroll hidden"
+			>
+				<div class="table-head">
+					<span>Pair</span>
+					<span>Buy Price</span>
+					<span>Sell Price</span>
+					<span>Buy/Sell</span>
+					<span>% Profit</span>
+					<span>Volume</span>
+				</div>
+				<div class="table-body"></div>
+			</div>
+			<div
+				id="table-3"
+				data-tab-content="tables"
+				class="table table--pairs custom-scroll hidden"
+			>
+				<div class="table-head">
+					<span>Pair</span>
+					<span>Buy Price</span>
+					<span>Sell Price</span>
+					<span>Buy/Sell</span>
+					<span>% Profit</span>
+					<span>Volume</span>
+				</div>
+				<div class="table-body"></div>
+			</div>
+		</div>
+		<div class="execution-data-bottom">
+			<div class="table-tabs" data-tabs="bottom-tables">
+				<div data-tab="open-routes" class="table-tabs-item">Open Routes</div>
+				<div data-tab="arbitrage-history" class="table-tabs-item active">
+					Arbitrage History
+				</div>
+			</div>
+			<div
+				data-tab-content="bottom-tables"
+				id="open-routes"
+				class="table custom-scroll table--open table--dynamic hidden open-rout-table-empty"
+			>
+				<div class="table-body">
+					<div class="empty-body">
+						<img src="images/icons/book.svg" alt="book" />
+						No Open Routes
+					</div>
+				</div>
+			</div>
+			<div
+				data-tab-content="bottom-tables"
+				id="arbitrage-history"
+				class="table table--arbitrage custom-scroll table--dynamic hist-rout-table-empty"
+			>
+				<div class="table-body">
+					<div class="empty-body">
+						<img src="images/icons/book.svg" alt="book" />
+						No History
+					</div>
+				</div>
+			</div>
+			<div
+				data-tab-content="bottom-tables"
+				id="open-routes"
+				class="table custom-scroll table--open table--dynamic hidden open-rout-table"
+			>
+				<div class="table-head">
+					<span>Pair</span>
+					<span>Quantity</span>
+					<span>% Profit</span>
+					<span>Created</span>
+					<span>Status</span>
+				</div>
+				<div class="table-body"></div>
+			</div>
+			<div
+				data-tab-content="bottom-tables"
+				id="arbitrage-history"
+				class="table table--arbitrage custom-scroll table--dynamic hidden hist-rout-table"
+			>
+				<div class="table-head">
+					<span>Pair</span>
+					<span>Quantity</span>
+					<span>% Profit</span>
+					<span>Status</span>
+					<span>Profit</span>
+					<span>Created</span>
+				</div>
+				<div class="table-body"></div>
+			</div>
+		</div>
+	</div>
+	<div class="execution-form">
+		<div class="execution-form__wrapper">
+			<div class="execution-form__profit">2.4%</div>
+			<div class="execution-form__pair">VINU_USDT</div>
+			<div class="exchange">
+				<div class="exchange-field">
+					<div class="exchange-field__left">
+						<div class="exchange-field__label"><span>1.</span> Buying on</div>
+						<div class="exchange-field__name">OKX</div>
+					</div>
+					<div class="exchange-field__right">
+						<div class="exchange-field__price execution-form__buy">$0.213</div>
+						<div class="exchange-field__commission">
+							<span>***%</span>Commission
+						</div>
+					</div>
+				</div>
+				<button type="button" class="exchange-button">
+					<img src="images/icons/swap.svg" alt="swap" />
+				</button>
+				<div class="exchange-field">
+					<div class="exchange-field__left">
+						<div class="exchange-field__label"><span>2.</span> Selling on</div>
+						<div class="exchange-field__name">Gate.io</div>
+					</div>
+					<div class="exchange-field__right">
+						<div class="exchange-field__price execution-form__sell">$0.219</div>
+						<div class="exchange-field__commission">
+							<span>***%</span>Commission
+						</div>
+					</div>
+				</div>
+			</div>
+			<label class="execution-form-input">
+				<input type="text" placeholder="Insert Amount" />
+				<span class="execution-form-input__label">MAX</span>
+			</label>
+			<button class="form-submit">EXECUTE</button>
+			<div class="message message--warn">
+				<svg class="message__icon">
+					<use xlink:href="#icon-volume"></use>
+				</svg>
+				<div class="message__text">
+					Caution: The volume is extremely low. In this case, the trading
+					activity of this pair on both exchanges is low. This may lead to
+					delays in processing transactions or to their cancellation!
+				</div>
+			</div>
+			<div class="message message--pink">
+				<svg class="message__icon">
+					<use xlink:href="#icon-clock"></use>
+				</svg>
+				<div class="message__text">
+					Act Fast! Arbitrage opportunities are time-sensitive and typically
+					last for no more than 10-15 minutes.
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<!--#include virtual="/parts/popups.html" -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+	const swiper = new Swiper(".promo-slider", {});
+</script>
+<!--#include virtual="/parts/scripts.html" -->

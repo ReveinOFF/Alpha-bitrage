@@ -1,0 +1,49 @@
+// Structure Styles
+.container {
+	width: 100%;
+	max-width: 1620px;
+	margin: 0 auto;
+	
+	@media screen and (max-width: $l-desk) {
+		max-width: 1400px;
+	}
+
+	@media screen and (max-width: $desk) {
+		max-width: h(1620px);
+	}
+
+	@media screen and (max-width: $mobile) {
+		padding: 0 16px;
+	}
+}
+
+.page {
+	&-index {}
+}
+
+// Default
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+
+	&:focus:required:invalid {
+		border-color: red
+	}
+
+	&:required:valid {
+		border-color: green
+	}
+}
+
+body {
+	font-family: $font-family;
+	color: $text-color;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	background: #0e0f13;
+}

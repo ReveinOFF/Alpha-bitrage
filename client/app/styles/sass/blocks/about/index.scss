@@ -1,0 +1,38 @@
+.about-page {
+	
+	.content-area {
+		padding-top: 76px;
+		padding-bottom: 100px;
+		
+		@media screen and (max-width: $desk) {
+			padding-top: h(76px);
+			padding-bottom: h(100px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			padding-top: 15px;
+			padding-bottom: 15px;
+
+			.page-header .main-title {
+				text-align: center;
+				width: 100%;
+			}
+		}
+	}
+
+	@media screen and (max-width: $mobile) {
+
+		.page-header {
+			background: #fff;
+			padding-top: 15px;
+			border-bottom: 0;
+		}
+
+		.page-header .main-title {
+			text-align: center;
+			width: 100%;
+			font-size: 25px;
+			color: #000;
+		}
+	}
+}

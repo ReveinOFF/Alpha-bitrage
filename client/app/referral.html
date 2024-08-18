@@ -1,0 +1,86 @@
+<!--#set var="title" value="Referral Program" -->
+<!--#include virtual="/parts/head.html" -->
+<!--#include virtual="/icons/dist/sprites.html" -->
+<!--#include virtual="/parts/headers/header.html" -->
+
+<main class="page referral-page">
+	<div class="container">
+		<h1 class="page-title">Referral Program</h1>
+	</div>
+
+	<!-- Referral Block -->
+	<div class="referral-block">
+		<div class="container">
+			<div class="referral-steps">
+				<div class="referral-steps-item">
+					<img src="images/icons/share.svg" alt="share" />
+					Share Link
+				</div>
+				<div class="referral-steps-item">
+					<img src="images/icons/person.svg" alt="share" />
+					Friend Register
+				</div>
+				<div class="referral-steps-item">
+					<img src="images/icons/deposit.svg" alt="share" />
+					Deposit $25
+				</div>
+				<div class="referral-steps-item">
+					<img src="images/icons/arrows.svg" alt="share" />
+					Friend Execute 1 Route
+				</div>
+				<div class="referral-steps-item">
+					<img src="images/icons/earn.svg" alt="share" />
+					Earn $5 Reward
+				</div>
+			</div>
+
+			<div class="referrals">
+				<div class="referrals-head">
+					<h4 class="referrals-head__title">Referrals 7d Earns</h4>
+					<div class="referrals-head__total">Total referrals: 0</div>
+					<div class="copy-field">
+						<div class="copy-field__input">alpharbitrage.xyz/refer?r=...</div>
+						<button class="copy-field-button copy-link">
+							Copy <br />
+							Link
+						</button>
+						<button class="copy-field-button copy-code">
+							Copy <br />
+							Code
+						</button>
+					</div>
+				</div>
+				<div class="referrals-body">
+					<div class="empty-space">
+						<img
+							src="images/icons/friends.svg"
+							alt="friends"
+							class="empty-space__image"
+						/>
+						<strong class="empty-space__title">Leaderboard</strong>
+						<p class="empty-space__desc">
+							Refer friends to AlphArbitrage to earn rewards.
+						</p>
+					</div>
+					<div style="display: none" class="referrals-table">
+						<div class="referrals-table-head">
+							<span>Name</span>
+							<span>Created</span>
+							<span>Earnings</span>
+						</div>
+						<div class="referrals-table-body"></div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer">AlphArbitrage Sollutions @ 2024</footer>
+		</div>
+	</div>
+</main>
+<!--#include virtual="/parts/popups.html" -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+	const swiper = new Swiper(".promo-slider", {});
+</script>
+<!--#include virtual="/parts/scripts.html" -->

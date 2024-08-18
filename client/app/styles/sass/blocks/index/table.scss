@@ -1,0 +1,261 @@
+.table-block {
+	.tabs {
+		margin-bottom: 12px;
+
+		@media screen and (max-width: $desk) {
+			margin-bottom: h(12px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.table {
+	border-radius: 5px;
+	background: #14151b;
+	padding: 14px 40px 50px 40px;
+
+	@media screen and (max-width: $desk) {
+		padding: h(14px) h(40px) h(50px) h(40px);
+	}
+
+	@media screen and (max-width: $mobile) {
+		margin-bottom: 5px;
+		padding: 10px 15px;
+	}
+
+	&--dynamic {
+		.table-head,
+		.table-item {
+			display: flex !important;
+			align-items: center;
+
+			span {
+				width: auto !important;
+				flex: 1;
+				display: block !important;
+
+				&:first-child {
+					flex: 2;
+				}
+			}
+		}
+	}
+
+	// For Pairs
+	&--pairs {
+		span {
+			// Buy/Sell in mobile
+			&:nth-child(4) {
+				display: none;
+			}
+
+			@media screen and (max-width: $mobile) {
+				&:nth-child(4) {
+					display: flex;
+				}
+
+				&:nth-child(2),
+				&:nth-child(3) {
+					display: none;
+				}
+
+				&:last-child {
+					justify-content: center !important;
+				}
+			}
+		}
+	}
+
+	// For Open Routes
+	&--open {
+		span {
+			@media screen and (max-width: $mobile) {
+				&:nth-child(5) {
+					display: none !important;
+				}
+
+				&:first-child {
+					flex: 1.5 !important;
+				}
+
+				&:nth-child(4) {
+					display: flex !important;
+					justify-content: flex-end !important;
+				}
+			}
+		}
+	}
+
+	&--arbitrage {
+		span {
+			@media screen and (max-width: $mobile) {
+				&:nth-child(3) {
+					display: none !important;
+				}
+
+				&:nth-child(1) {
+					order: 1;
+					flex: 1.5 !important;
+				}
+
+				&:nth-child(2) {
+					order: 2;
+				}
+
+				&:nth-child(5) {
+					order: 3;
+				}
+
+				&:nth-child(4) {
+					order: 4;
+				}
+
+				&:last-child {
+					order: 5;
+				}
+			}
+		}
+	}
+
+	&-head {
+		padding: 10px 0;
+		border-bottom: 1px solid rgba(142, 148, 166, 0.2);
+		display: grid;
+		grid-template-columns: 0.66fr 0.57fr 1fr 0.8fr 0.3fr;
+
+		@media screen and (max-width: $desk) {
+			padding: h(10px) 0;
+		}
+
+		@media screen and (max-width: $mobile) {
+			padding: 5px 0;
+			grid-template-columns: 1fr 1fr 0.83fr 0.41fr;
+		}
+
+		span {
+			padding-left: 12px;
+			font-weight: 400;
+			font-size: 16px;
+			color: #8e94a6;
+			display: flex;
+			justify-content: center;
+
+			&:first-child {
+				justify-content: flex-start;
+			}
+
+			@media screen and (max-width: $desk) {
+				padding-left: h(12px);
+				font-size: h(16px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				font-size: 10px;
+				padding-left: 0 !important;
+				justify-content: flex-start;
+			}
+		}
+	}
+
+	&-body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-item {
+		height: 50px;
+		cursor: pointer;
+		border-bottom: 1px solid rgba(142, 148, 166, 0.2);
+		display: grid;
+		grid-template-columns: 0.66fr 0.57fr 1fr 0.8fr 0.3fr;
+
+		@media screen and (max-width: $mobile) {
+			height: 25px;
+			grid-template-columns: 1fr 1fr 0.83fr 0.41fr;
+		}
+
+		@media screen and (max-width: $desk) {
+			height: h(50px);
+		}
+
+		&:hover {
+			background: #25262b;
+		}
+
+		span {
+			padding-left: 12px;
+			font-weight: 400;
+			font-size: 20px;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@media screen and (max-width: $mobile) {
+				justify-content: flex-start !important;
+			}
+
+			&:first-child {
+				justify-content: flex-start;
+			}
+
+			@media screen and (max-width: $desk) {
+				padding-left: h(12px);
+				font-size: h(20px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				font-size: 11px;
+				padding-left: 0;
+			}
+
+			&.table-item-din--pink {
+				color: #a402cd;
+			}
+
+			&.table-item-din--green {
+				color: #02cd02;
+			}
+
+			&.table-item-din--red {
+				color: #fd3528;
+			}
+
+			&.table-item-din--yellow {
+				color: #cdb902;
+			}
+		}
+
+		svg.route-item__icon {
+			fill: #fff;
+			width: 22px;
+			height: 20px;
+			margin-right: 0 !important;
+
+			@media screen and (max-width: $desk) {
+				width: h(22px);
+				height: h(20px);
+			}
+
+			&--green {
+				fill: #02cd02;
+			}
+
+			&--red {
+				fill: #fd3528;
+			}
+
+			&--yellow {
+				fill: #cdb902;
+			}
+
+			@media screen and (max-width: $mobile) {
+				width: 12px;
+				height: 11px;
+			}
+		}
+	}
+}

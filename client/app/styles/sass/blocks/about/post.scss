@@ -1,0 +1,140 @@
+.post {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&-strong {
+		margin-bottom: 80px;
+		text-align: center;
+
+		@media screen and (max-width: $desk) {
+			margin-bottom: h(80px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			margin-bottom: 34px;
+		}
+	}
+	
+	&-strong {
+		font-family: $second-family;
+		font-weight: 400;
+		font-size: 45px;
+		text-align: center;
+		color: #000;
+
+		@media screen and (max-width: $desk) {
+			font-size: h(45px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			font-size: 16px;
+		}
+		
+		span {
+			color: #a402cd;
+		}
+	}
+	
+	&-item {
+		position: relative;
+		font-family: $second-family;
+		font-weight: 400;
+		font-size: 35px;
+		color: #757d8c;
+		padding-left: 112px;
+		padding-top: 60px;
+
+		@media screen and (max-width: $desk) {
+			font-size: h(35px);
+			padding-left: h(112px);
+			padding-top: h(60px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			padding-top: 24px;
+			padding-left: 33px;
+			font-size: 12px;
+		}
+		
+		&::before {
+			content: "";
+			width: 70px;
+			height: 70px;
+			display: block;
+			background: url(../images/icons/post_decor.png);
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			@media screen and (max-width: $desk) {
+				width: h(70px);
+				height: h(70px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+	
+	&-image {
+		margin-top: 80px;
+		margin-bottom: 80px;
+
+		@media screen and (max-width: $desk) {
+			margin-top: h(80px);
+			margin-bottom: h(80px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			
+			&--1 {
+				width: 70% !important;
+			}
+			
+			&--2 {
+				width: 100% !important;
+			}
+		}
+	}
+	
+	&-list {
+		font-family: $second-family;
+		font-weight: 400;
+		font-size: 35px;
+		color: #757d8c;
+		max-width: 1400px;
+		margin: 0 auto;
+
+		@media screen and (max-width: $desk) {
+			font-size: h(35px);
+			max-width: h(1400px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			font-size: 12px;
+			padding-left: 20px;
+		}
+		
+		li {
+			list-style-type: decimal;
+			
+			&:not(:last-child) {
+				margin-bottom: 30px;
+
+				@media screen and (max-width: $desk) {
+					margin-bottom: h(30px);
+				}
+
+				@media screen and (max-width: $mobile) {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

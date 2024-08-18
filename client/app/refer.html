@@ -1,0 +1,14 @@
+<!--#set var="title" value="Referral Program - 2" -->
+<!--#include virtual="/parts/head.html" -->
+<!--#include virtual="/icons/dist/sprites.html" -->
+<!--#include virtual="/parts/headers/header.html" -->
+
+<main></main>
+<!--#include virtual="/parts/popups.html" -->
+
+<script>
+	const searchParams = new URLSearchParams(window.location.search);
+
+	location.href = `/sign-up.html?r=${searchParams.get("r")}`;
+</script>
+<!--#include virtual="/parts/scripts.html" -->

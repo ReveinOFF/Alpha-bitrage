@@ -1,0 +1,94 @@
+.promo-block {
+	margin-bottom: 20px;
+
+	@media screen and (max-width: $desk) {
+		margin-bottom: h(20px);
+	}
+	
+	.container {
+		
+		@media screen and (max-width: $mobile) {
+			padding: 0 !important;
+		}
+	}
+
+	.swiper-pagination-bullet {
+		width: 6px;
+		height: 6px;
+		background: #715c76;
+	}
+	
+	.swiper-pagination-bullet-active {
+		background: #a402cd;
+	}
+	
+	.promo-slider {
+		
+		@media screen and (max-width: $mobile) {
+			padding-bottom: 16px;
+		}
+
+		.swiper-pagination {
+			bottom: 0;
+			top: auto;
+		}
+	}
+}
+
+.promo {
+	border-radius: 10px;
+	height: 450px;
+	background-size: cover;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	background-size: cover !important;
+
+	@media screen and (max-width: $desk) {
+		height: h(450px);
+		border-radius: h(10px);
+		padding: h(50px);
+	}
+
+	@media screen and (max-width: $mobile) {
+		border-radius: 0;
+		height: 150px;
+		padding: 20px 16px;
+	}
+	
+	&__title {
+		font-weight: 400;
+		font-size: 96px;
+		color: #fff;
+		margin-bottom: 10px;
+
+		@media screen and (max-width: $desk) {
+			font-size: h(96px);
+			margin-bottom: h(10px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			font-size: 32px;
+			margin-bottom: 0;
+		}
+	}
+	
+	&__desc {
+		font-weight: 400;
+		font-size: 36px;
+		color: #c5c5c5;
+		margin-bottom: 25px;
+
+		@media screen and (max-width: $desk) {
+			font-size: h(36px);
+			margin-bottom: h(25px);
+		}
+
+		@media screen and (max-width: $mobile) {
+			font-size: 12px;
+			margin-bottom: 8px;
+		}
+	}
+}

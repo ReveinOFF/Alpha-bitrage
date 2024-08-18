@@ -1,0 +1,89 @@
+<!--#set var="title" value="Sign Up" -->
+<!--#include virtual="/parts/head.html" -->
+<!--#include virtual="/icons/dist/sprites.html" -->
+<!--#include virtual="/parts/headers/non-auth-header.html" -->
+
+<style>
+	@media (max-width: 640px) {
+		.non-auth-header {
+			display: none;
+		}
+	}
+</style>
+
+<main class="page auth-page">
+	<div class="container">
+		<form class="window auth-window auth-window--reg">
+			<div class="auth-window-mobile">
+				<a href="/" class="auth-window-mobile__close">
+					<svg>
+						<use xlink:href="#icon-close"></use>
+					</svg>
+				</a>
+
+				<a href="/sign-in.html" class="auth-window-mobile__link">Login</a>
+			</div>
+
+			<img
+				src="images/logotype.png"
+				alt="logotype"
+				class="auth-window-logotype"
+			/>
+			<h1 class="auth-window-title">Sign Up</h1>
+			<input
+				name="email"
+				type="email"
+				class="default-input"
+				placeholder="Email"
+			/>
+			<div class="password-field">
+				<input
+					autocomplete="password"
+					name="password"
+					type="password"
+					class="default-input"
+					placeholder="Password"
+				/>
+				<button type="button" class="password-field-switch">
+					<img src="images/icons/password-close.svg" alt="password" />
+				</button>
+			</div>
+			<div class="password-field">
+				<input
+					autocomplete="confirm_pass"
+					name="confirm_pass"
+					type="password"
+					class="default-input"
+					placeholder="Confirm Password"
+				/>
+				<button type="button" class="password-field-switch">
+					<img src="images/icons/password-close.svg" alt="password" />
+				</button>
+			</div>
+			<div class="cb-wrapper">
+				<label class="cb">
+					<input type="checkbox" />
+					<span class="cb__decor"></span>
+				</label>
+				<div class="cb__text">
+					By signing up, I agree to the
+					<a href="terms-and-conditions.html">User Agreement</a> and
+					<a href="/privacy-policy.html">Privacy Policy</a>.
+				</div>
+			</div>
+			<button class="default-submit">Sign Up</button>
+			<div class="referral-code">
+				<input
+					type="text"
+					id="ref-code"
+					class="default-input"
+					placeholder="Referral Code"
+				/>
+				<div class="referral-code__ok">Ok</div>
+			</div>
+		</form>
+	</div>
+</main>
+
+<!--#include virtual="/parts/popups.html" -->
+<!--#include virtual="/parts/scripts.html" -->

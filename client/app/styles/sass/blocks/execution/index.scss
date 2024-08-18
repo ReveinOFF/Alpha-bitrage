@@ -1,0 +1,427 @@
+.execution {
+	display: flex;
+	height: calc(100vh - 80px);
+	
+	@media screen and (max-width: $l-tab) {
+		height: auto;
+		flex-direction: column-reverse;
+	}
+	
+	&.open {
+		
+		.execution-data {
+			width: calc(1120 / 1920 * 100%);
+		}
+		
+		.execution-form {
+			display: flex;
+		}
+	}
+	
+	&-data, &-form {
+		height: 100%;
+
+		@media screen and (max-width: $l-tab) {
+			width: 100% !important; 
+		}
+	}
+	
+	&-data {
+		width: 100%;
+
+		@media screen and (max-width: $l-tab) {
+			margin-bottom: 40px;
+		}
+
+		.table {
+			height: calc(100% - 72px);
+			overflow-y: scroll;
+			padding: 0;
+			padding-left: calc((1920px - 1620px) / 2);
+			padding-right: 50px;
+			background: transparent;
+			border-top: 1px solid #2c2d33;
+
+			@media screen and (max-width: $desk) {
+				padding-left: calc((100vw - h(1620px)) / 2);
+				padding-right: h(50px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				border-top: 0;
+				background: #14151b;
+				padding: 10px !important;
+				margin: 0 16px;
+			}
+		}
+		
+		.tabs, .table-tabs {
+			padding-left: calc((1920px - 1620px) / 2);
+			margin-bottom: 25px;
+
+			@media screen and (max-width: $desk) {
+				padding-left: calc((100vw - h(1620px)) / 2);
+				margin-bottom: h(25px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				padding-left: 16px;
+				margin-bottom: 5px;
+			}
+		}
+		
+		&-top {
+			height: 70%;
+			border-bottom: 1px solid #2c2d33;
+			overflow: hidden;
+			padding-top: 50px;
+
+			@media screen and (max-width: $desk) {
+				padding-top: h(50px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				padding-top: 20px;
+				border-bottom: none;
+			}
+		}
+		
+		&-bottom {
+			height: 30%;
+			padding-top: 15px;
+			overflow: hidden;
+
+			@media screen and (max-width: $desk) {
+				padding-top: h(15px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				padding-top: 20px;
+			}
+
+			.table {
+				border-top: 0;
+
+				@media screen and (max-width: $mobile) {
+					background: none;
+					padding: 0 !important;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	
+	&-form {
+		border-left: 1px solid #2c2d33;
+		width: calc(800 / 1920 * 100%);
+		height: 100%;
+		background: url(../images/bg/execution.jpg);
+		background-size: cover;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		display: none;
+
+		@media screen and (max-width: $l-tab) {
+			padding-top: 40px;
+		}
+
+		@media screen and (max-width: $mobile) {
+			padding-top: 20px;
+		}
+
+		&__wrapper {
+			width: 100%;
+			max-width: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			@media screen and (max-width: $desk) {
+				max-width: p(500px);
+			}
+
+			@media screen and (max-width: $l-tab) {
+				max-width: 700px;
+			}
+
+			@media screen and (max-width: $mobile) {
+				padding: 0 16px;
+			}
+		}
+		
+		.exchange {
+			margin-bottom: 40px;
+
+			@media screen and (max-width: $desk) {
+				margin-bottom: p(30px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				margin-bottom: 20px;
+			}
+		}
+
+		&__profit {
+			font-weight: 400;
+			font-size: 48px;
+			text-align: center;
+			color: #02cd02;
+			margin-bottom: 30px;
+
+			@media screen and (max-width: $desk) {
+				font-size: p(48px);
+				margin-bottom: p(20px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				margin-bottom: 10px;
+			}
+		}
+
+		&__pair {
+			font-family: $second-family;
+			font-weight: 400;
+			font-size: 36px;
+			text-align: center;
+			color: #fff;
+			margin-bottom: 50px;
+
+			@media screen and (max-width: $desk) {
+				font-size: p(36px);
+				margin-bottom: p(20px);
+			}
+			
+			@media screen and (max-width: $mobile) {
+				font-size: 20px;
+				margin-bottom: 13px;
+			}
+		}
+
+		&-input {
+			width: 100%;
+			position: relative;
+			margin-bottom: 20px;
+			
+			@media screen and (max-width: $desk) {
+				margin-bottom: p(20px);
+			}
+			
+			input {
+				width: 100%;
+				font-family: $second-family;
+				font-weight: 400;
+				font-size: 24px;
+				color: #fff;
+				border: 1px solid #887d8b;
+				border-radius: 5px;
+				padding: 20px;
+				background: #756579;
+
+				@media screen and (max-width: $desk) {
+					font-size: p(24px);
+					border-radius: p(5);
+					padding: p(20px);
+				}
+
+				@media screen and (max-width: $mobile) {
+					font-size: 16px;
+					padding: 10px 13px;
+				}
+				
+				&::placeholder {
+					color: rgba(255, 255, 255, 0.5);
+				}
+			}
+
+			&__label {
+				font-family: $second-family;
+				font-weight: 400;
+				font-size: 24px;
+				text-align: right;
+				color: #fff;
+				position: absolute;
+				right: 20px;
+				top: 50%;
+				transform: translateY(-50%);
+				cursor: pointer;
+
+				@media screen and (max-width: $desk) {
+					font-size: p(24px);
+					right: p(20px);
+				}
+
+				@media screen and (max-width: $mobile) {
+					font-size: 16px;
+				}
+			}
+		}
+		
+		.form-submit {
+			margin-bottom: 30px;
+
+			@media screen and (max-width: $desk) {
+				margin-bottom: p(30px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				margin-bottom: 20px;
+			}
+		}
+		
+		.message:not(:last-child) {
+			margin-bottom: 20px;
+
+			@media screen and (max-width: $desk) {
+				margin-bottom: p(20px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+.exchange {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 23px;
+
+	@media screen and (max-width: $desk) {
+		gap: p(23px)
+	}
+
+	@media screen and (max-width: $mobile) {
+		gap: 10px;
+	}
+
+	&-field {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border: 1px solid #2c2d33;
+		border-radius: 10px;
+		background: #14151b;
+		width: 100%;
+		padding: 15px 20px;
+		cursor: pointer;
+
+		@media screen and (max-width: $desk) {
+			border-radius: p(10px);
+			padding: p(15px) p(20px);
+		}
+
+		&__left {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&__right {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+		}
+		
+		&__label {
+			font-family: $second-family;
+			font-weight: 400;
+			font-size: 24px;
+			text-align: center;
+			color: #808896;
+			margin-bottom: 8px;
+
+			@media screen and (max-width: $desk) {
+				font-size: p(24px);
+				margin-bottom: p(8px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				font-size: 16px;
+			}
+
+			span {
+				color: #8907a9;
+			}
+		}
+		
+		&__name {
+			font-family: $second-family;
+			font-weight: 400;
+			font-size: 32px;
+			text-align: center;
+			color: #fff;
+
+			@media screen and (max-width: $desk) {
+				font-size: p(32px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				font-size: 20px;
+			}
+		}
+		
+		&__price {
+			font-family: $font-family;
+			font-weight: 400;
+			font-size: 32px;
+			text-align: center;
+			color: #fff;
+			margin-bottom: 8px;
+
+			@media screen and (max-width: $desk) {
+				font-size: p(32px);
+				margin-bottom: p(8px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				font-size: 20px;
+			}
+		}
+		
+		&__commission {
+			font-family: $second-family;
+			font-weight: 400;
+			font-size: 24px;
+			text-align: center;
+			color: #808896;
+
+			@media screen and (max-width: $desk) {
+				font-size: p(24px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				font-size: 16px;
+			}
+
+			span {
+				color: #a402cd;
+			}
+		}
+	}
+
+	.exchange-button {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		cursor: pointer;
+		
+		img {
+			width: 60px;
+
+			@media screen and (max-width: $desk) {
+				width: p(60px);
+			}
+
+			@media screen and (max-width: $mobile) {
+				width: 38px;
+			}
+		}
+	}
+}
