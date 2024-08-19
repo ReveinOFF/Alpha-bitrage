@@ -51,7 +51,7 @@
 	align-items: flex-start;
 	width: 100%;
 	background: #ffffff;
-	height: 50px;
+	padding-block: 10px;
 	padding-right: 70px;
 
 	& > div {
@@ -84,4 +84,130 @@
 
 .admin-main {
 	display: flex;
+
+	& > .center-admin {
+		width: 100%;
+		display: grid;
+		grid-template-rows: auto auto 1fr;
+		max-height: 100vh;
+
+		& > .info-site {
+			display: flex;
+			justify-content: space-evenly;
+			padding-top: 40px;
+
+			& > .info-item {
+				display: flex;
+				justify-content: space-between;
+				width: 18%;
+				background: #ffffff;
+				border-radius: 10px;
+				padding: 15px;
+				padding-bottom: 80px;
+
+				& > .info-item-block {
+					display: grid;
+
+					& > div:first-child {
+						font-size: 13px;
+						color: #202224;
+					}
+
+					& > div:last-child {
+						font-size: 20px;
+						font-weight: 700;
+						color: #202224;
+					}
+				}
+			}
+		}
+
+		& > .notification {
+			background: #ffffff;
+			margin: 40px;
+			border-radius: 10px;
+			padding: 30px;
+			display: grid;
+			grid-template-rows: auto 1fr;
+
+			& > .title-admin {
+				font-size: 15px;
+				font-weight: 600;
+				color: #515559;
+			}
+
+			& > .notif-block {
+				overflow-y: auto;
+				overflow-x: hidden;
+				margin-top: 25px;
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+
+				& > div {
+					font-size: 18px;
+					font-weight: 400;
+					color: #202224;
+				}
+			}
+		}
+	}
+
+	& > .center-admin-2 {
+		width: 100%;
+		display: grid;
+		grid-template-rows: auto 1fr;
+		max-height: 100vh;
+	}
+
+	.users-block {
+		background: #ffffff;
+		margin: 40px;
+		border-radius: 10px;
+		padding: 30px;
+		overflow-y: auto;
+
+		table {
+			width: 100%;
+		}
+
+		thead {
+			height: 30px;
+		}
+
+		thead > tr {
+			border-bottom: 1px solid #5155594d;
+
+			& > th {
+				font-size: 14px;
+				font-weight: 500;
+				color: #515559;
+			}
+		}
+
+		tbody > tr {
+			cursor: pointer;
+
+			&:hover {
+				background: #5155591a;
+			}
+
+			& > td {
+				text-align: center;
+				height: 25px;
+				vertical-align: middle;
+				color: #202224;
+				font-size: 16px;
+				font-weight: 500;
+			}
+
+			&:first-child > td {
+				height: 10px;
+			}
+
+			.admin-dep {
+				color: #00b69b;
+			}
+		}
+	}
 }

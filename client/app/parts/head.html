@@ -17,7 +17,16 @@
 		<link rel="stylesheet" href="css/app.min.css" />
 	</head>
 	<body>
-	<script>
-		if (location.pathname === "/admin.html")
-			document.body.style.background = "#F5F6FA";
-	</script>
+		<script>
+			if (
+				window.location.pathname === "/admin.html" ||
+				window.location.pathname === "/admin-user.html" ||
+				window.location.pathname === "/admin-withdrawal.html" ||
+				window.location.pathname === "/admin-announce.html" ||
+				window.location.pathname === "/admin-guide.html" ||
+				window.location.pathname === "/admin-user-page.html"
+			)
+				document.body.style.background = "#F5F6FA";
+		</script>
+	</body>
+</html>

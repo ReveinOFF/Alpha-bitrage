@@ -6,7 +6,8 @@ if (
 	window.location.pathname === "/admin-user.html" ||
 	window.location.pathname === "/admin-withdrawal.html" ||
 	window.location.pathname === "/admin-announce.html" ||
-	window.location.pathname === "/admin-guide.html"
+	window.location.pathname === "/admin-guide.html" ||
+	window.location.pathname === "/admin-user-page.html"
 )
 	document.addEventListener("DOMContentLoaded", async () => {
 		const btn = document.querySelector(".admin-logout");

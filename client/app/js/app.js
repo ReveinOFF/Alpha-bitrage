@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		"/admin-withdrawal.html",
 		"/admin-announce.html",
 		"/admin-guide.html",
+		"/admin-user-page.html",
 	];
 	const publicPages = ["/sign-in.html", "/sign-up.html", "/refer.html"];
 
