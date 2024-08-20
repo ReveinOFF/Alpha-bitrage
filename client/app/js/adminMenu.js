@@ -19,6 +19,12 @@ if (
 			if (link.getAttribute("href") === currentPage) {
 				link.classList.add("active");
 			}
+
+			if (
+				link.getAttribute("href") === "/admin-user.html" &&
+				currentPage === "/admin-user-page.html"
+			)
+				link.classList.add("active");
 		});
 
 		btn.addEventListener("click", async () => {

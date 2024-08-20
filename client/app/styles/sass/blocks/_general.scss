@@ -3,7 +3,7 @@
 	width: 100%;
 	max-width: 1620px;
 	margin: 0 auto;
-	
+
 	@media screen and (max-width: $l-desk) {
 		max-width: 1400px;
 	}
@@ -18,7 +18,12 @@
 }
 
 .page {
-	&-index {}
+	&-index {
+	}
+}
+
+* {
+	box-sizing: border-box;
 }
 
 // Default
@@ -27,15 +32,16 @@
 	color: #fff;
 }
 
-input, textarea {
+input,
+textarea {
 	outline: none;
 
 	&:focus:required:invalid {
-		border-color: red
+		border-color: red;
 	}
 
 	&:required:valid {
-		border-color: green
+		border-color: green;
 	}
 }
 
