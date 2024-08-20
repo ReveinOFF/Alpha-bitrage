@@ -3,6 +3,7 @@ import {
   Get,
   HttpCode,
   HttpStatus,
+  Query,
   UseGuards,
 } from '@nestjs/common';
 import { HelpService } from './help.service';
@@ -24,5 +25,12 @@ export class HelpController {
   @HttpCode(HttpStatus.OK)
   async getGuide() {
     return await this.helpService.getGuide();
+  }
+
+  @Get('search')
+  @UseGuards(JwtAuthGuard)
+  @HttpCode(HttpStatus.OK)
+  async search(@Query('text') text: string) {
+    return await this.helpService.search(text);
   }
 }

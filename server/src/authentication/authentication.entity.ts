@@ -24,6 +24,12 @@ export class User extends BaseEntity {
   @Column({ type: 'boolean', default: false })
   premium: boolean;
 
+  @Column({ type: 'timestamptz', nullable: true })
+  premiumAdd: Date;
+
+  @Column({ type: 'timestamptz', nullable: true })
+  premiumEnd: Date;
+
   @Column({
     type: 'decimal',
     precision: 10,

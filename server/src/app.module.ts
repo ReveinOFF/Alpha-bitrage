@@ -7,6 +7,7 @@ import { JwtModule } from '@nestjs/jwt';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { RoutesModule } from './home/routes.module';
 import { HelpModule } from './help/help.module';
+import { AdminModule } from './admin/admin.module';
 
 @Module({
   imports: [
@@ -46,6 +47,7 @@ import { HelpModule } from './help/help.module';
     AuthenticationModule,
     RoutesModule,
     HelpModule,
+    AdminModule,
   ],
   controllers: [],
   providers: [],
