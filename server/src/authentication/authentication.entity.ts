@@ -1,6 +1,6 @@
 import { Routes } from 'src/home/routes.entity';
 import { BaseEntity } from 'src/utils/base-entity';
-import { Role } from 'src/utils/enum';
+import { Role, StatusWD } from 'src/utils/enum';
 import { Column, Entity, Index, ManyToOne, OneToMany } from 'typeorm';
 
 @Index(['email', 'referralCode'])
@@ -78,6 +78,9 @@ export class User extends BaseEntity {
   @OneToMany(() => Routes, (rout) => rout.user)
   routes: User[];
 
+  @OneToMany(() => Withdrawals, (wd) => wd.user)
+  withdrawals: Withdrawals[];
+
   @Column({
     type: 'enum',
     enum: Role,
@@ -97,5 +100,28 @@ export class RefreshToken extends BaseEntity {
   token: string;
 
   @ManyToOne(() => User, (user) => user.refreshTokens)
+  user: User;
+}
+
+@Entity()
+export class Withdrawals extends BaseEntity {
+  @Column({
+    type: 'decimal',
+    precision: 10,
+    scale: 3,
+    default: 0.0,
+    nullable: false,
+  })
+  money: string;
+
+  @Column({
+    type: 'enum',
+    enum: StatusWD,
+    default: StatusWD.PENDING,
+    nullable: false,
+  })
+  status: StatusWD;
+
+  @ManyToOne(() => User, (user) => user.withdrawals)
   user: User;
 }

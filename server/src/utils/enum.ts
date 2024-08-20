@@ -9,6 +9,12 @@ export enum Status {
   SUCCESS = 'Success',
 }
 
+export enum StatusWD {
+  PENDING = 'Pending',
+  DECLINE = 'Decline',
+  ACCEPT = 'Accept',
+}
+
 export enum HelpType {
   ANNOUNCEMENTS = 'Announcements',
   GUIDES = 'Guides',

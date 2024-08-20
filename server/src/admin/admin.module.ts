@@ -1,36 +1,27 @@
 import { Module } from '@nestjs/common';
 import { AdminService } from './admin.service';
 import { AdminController } from './admin.controller';
-import { InjectRepository, TypeOrmModule } from '@nestjs/typeorm';
-import { User } from 'src/authentication/authentication.entity';
-import { Repository } from 'typeorm';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { User, Withdrawals } from 'src/authentication/authentication.entity';
+import { Help } from 'src/help/help.entity';
+import { JwtModule } from '@nestjs/jwt';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([User])],
+  imports: [
+    TypeOrmModule.forFeature([User, Help, Withdrawals]),
+    JwtModule.registerAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: async (configService: ConfigService) => ({
+        secret: configService.get<string>('JWT_SECRET'),
+        signOptions: {
+          expiresIn: configService.get<string | number>('JWT_EXPIRES_IN'),
+        },
+      }),
+    }),
+  ],
   providers: [AdminService],
   controllers: [AdminController],
 })
-export class AdminModule {
-  constructor(
-    @InjectRepository(User)
-    private usersRepository: Repository<User>,
-  ) {}
-
-  async getMainInf() {
-    const userCount = await this.usersRepository.count();
-    const premiumCount = await this.usersRepository.count({
-      where: { premium: true },
-    });
-    const totalDeposit = await this.usersRepository
-      .createQueryBuilder('user')
-      .select('SUM(user.deposited)', 'sum')
-      .getRawOne();
-
-    return {
-      userCount: userCount,
-      totalDeposit: totalDeposit,
-      totalWithdraw: 423,
-      premiumCount: premiumCount,
-    };
-  }
-}
+export class AdminModule {}
