@@ -7,10 +7,18 @@ if (window.location.pathname === "/admin.html")
 			const totalDep = document.querySelector("#total-deposit");
 			const totalPrem = document.querySelector("#count-prem");
 			const totalWD = document.querySelector("#count-wd");
+			const nf = document.querySelector(".notif-block");
 
 			totalUser.textContent = res.data.userCount;
 			totalDep.textContent = `$${res.data.totalDeposit}`;
 			totalPrem.textContent = res.data.premiumCount;
 			totalWD.textContent = `$${res.data.totalWithdraw}`;
+
+			if (res.data.notifications)
+				res.data.notifications.forEach((element) => {
+					const html = `<div>User ${element}</div>`;
+
+					nf.insertAdjacentHTML("beforeend", html);
+				});
 		});
 	});

@@ -1,17 +1,14 @@
 import { Module } from '@nestjs/common';
-import { AdminService } from './admin.service';
-import { AdminController } from './admin.controller';
+import { WithdrawalsService } from './withdrawals.service';
+import { WithdrawalsController } from './withdrawals.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { User } from 'src/authentication/authentication.entity';
-import { Help } from 'src/help/help.entity';
 import { JwtModule } from '@nestjs/jwt';
+import { Withdrawals } from './withdrawals.entity';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { Withdrawals } from 'src/withdrawals/withdrawals.entity';
-import { NotificationModule } from 'src/notifications/notifications.module';
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([User, Help, Withdrawals]),
+    TypeOrmModule.forFeature([Withdrawals]),
     JwtModule.registerAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
@@ -22,9 +19,8 @@ import { NotificationModule } from 'src/notifications/notifications.module';
         },
       }),
     }),
-    NotificationModule,
   ],
-  providers: [AdminService],
-  controllers: [AdminController],
+  providers: [WithdrawalsService],
+  controllers: [WithdrawalsController],
 })
-export class AdminModule {}
+export class WithdrawalsModule {}

@@ -8,6 +8,8 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { RoutesModule } from './home/routes.module';
 import { HelpModule } from './help/help.module';
 import { AdminModule } from './admin/admin.module';
+import { WithdrawalsModule } from './withdrawals/withdrawals.module';
+import { NotificationModule } from './notifications/notifications.module';
 
 @Module({
   imports: [
@@ -48,6 +50,8 @@ import { AdminModule } from './admin/admin.module';
     RoutesModule,
     HelpModule,
     AdminModule,
+    NotificationModule,
+    WithdrawalsModule,
   ],
   controllers: [],
   providers: [],

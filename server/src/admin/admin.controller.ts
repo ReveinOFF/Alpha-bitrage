@@ -7,6 +7,7 @@ import {
   HttpStatus,
   Param,
   Post,
+  Request,
   UseGuards,
 } from '@nestjs/common';
 import { AdminService } from './admin.service';
@@ -15,6 +16,13 @@ import { JwtAdminGuard } from 'src/authentication/authentication.guard';
 @Controller('admin')
 export class AdminController {
   constructor(private readonly adminService: AdminService) {}
+
+  @Get('menu-info')
+  @UseGuards(JwtAdminGuard)
+  @HttpCode(HttpStatus.OK)
+  async getMenuInf(@Request() req) {
+    return await this.adminService.getMenu(req.user);
+  }
 
   @Get('main-info')
   @UseGuards(JwtAdminGuard)
@@ -35,5 +43,12 @@ export class AdminController {
   @HttpCode(HttpStatus.OK)
   async deleteAnn(@Param('id') id: number) {
     return await this.adminService.deleteAnn(id);
+  }
+
+  @Get('all-wd')
+  @UseGuards(JwtAdminGuard)
+  @HttpCode(HttpStatus.OK)
+  async getAllWd() {
+    return await this.adminService.getAllWd();
   }
 }

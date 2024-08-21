@@ -1,8 +1,11 @@
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { User, Withdrawals } from 'src/authentication/authentication.entity';
+import { TokenDTO } from 'src/authentication/authentication.dto';
+import { User } from 'src/authentication/authentication.entity';
 import { Help } from 'src/help/help.entity';
+import { NotificationsService } from 'src/notifications/notifications.service';
 import { StatusWD } from 'src/utils/enum';
+import { Withdrawals } from 'src/withdrawals/withdrawals.entity';
 import { Repository } from 'typeorm';
 
 @Injectable()
@@ -14,7 +17,19 @@ export class AdminService {
     private helpRepository: Repository<Help>,
     @InjectRepository(Withdrawals)
     private wdRepository: Repository<Withdrawals>,
+    private readonly nfService: NotificationsService,
   ) {}
+
+  async getMenu(tokenData: TokenDTO) {
+    const user = await this.usersRepository.findOne({
+      where: { id: tokenData.id },
+    });
+
+    return {
+      image: user.image,
+      name: user.name,
+    };
+  }
 
   async getMainInf() {
     const userCount = await this.usersRepository.count();
@@ -30,12 +45,18 @@ export class AdminService {
       .select('SUM(withdrawals.money)')
       .where('withdrawals.status = :status', { status: StatusWD.PENDING })
       .getRawOne();
+    const notif = await this.nfService.getAllNf();
+
+    const notifConv = notif.map(
+      (item) => `${item.user.name} ${item.htmlContent}`,
+    );
 
     return {
       userCount: userCount,
       totalDeposit: parseFloat(totalDeposit.sum),
       totalWithdraw: parseFloat(totalWD.sum) || 0,
       premiumCount: premiumCount,
+      notifications: notifConv,
     };
   }
 
@@ -47,5 +68,14 @@ export class AdminService {
 
   async deleteAnn(id: number) {
     return await this.helpRepository.delete({ id });
+  }
+
+  async getAllWd() {
+    const wd = await this.wdRepository.find({
+      where: { status: StatusWD.PENDING },
+      relations: ['user'],
+    });
+
+    return wd;
   }
 }

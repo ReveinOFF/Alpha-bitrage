@@ -40,4 +40,12 @@ if (
 				window.location.pathname = "/sign-in.html";
 			}
 		});
+
+		const image = document.querySelector(".admin-header .user-avatar-h");
+		const name = document.querySelector(".admin-header .user-name-h");
+
+		const { data } = await axios.get("/admin/menu-info");
+
+		if (data?.image?.length > 0) image.src = data.image;
+		name.textContent = data?.name || "...";
 	});
