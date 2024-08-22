@@ -7,6 +7,7 @@ import {
   HttpStatus,
   Param,
   Post,
+  Put,
   Request,
   UseGuards,
 } from '@nestjs/common';
@@ -50,5 +51,19 @@ export class AdminController {
   @HttpCode(HttpStatus.OK)
   async getAllWd() {
     return await this.adminService.getAllWd();
+  }
+
+  @Put('update-wd')
+  @UseGuards(JwtAdminGuard)
+  @HttpCode(HttpStatus.OK)
+  async updateWd(@Body() data) {
+    return await this.adminService.updateWd(data);
+  }
+
+  @Get('all-users')
+  @UseGuards(JwtAdminGuard)
+  @HttpCode(HttpStatus.OK)
+  async getAllUsers() {
+    return await this.adminService.getAllUsers();
   }
 }

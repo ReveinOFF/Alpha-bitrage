@@ -83,6 +83,9 @@ export class User extends BaseEntity {
   @OneToMany(() => Notification, (nf) => nf.user)
   notifications: Notification[];
 
+  @OneToMany(() => Notification, (d) => d.user)
+  deposites: Deposit[];
+
   @OneToMany(() => Withdrawals, (wd) => wd.user)
   withdrawals: Withdrawals[];
 
@@ -105,5 +108,20 @@ export class RefreshToken extends BaseEntity {
   token: string;
 
   @ManyToOne(() => User, (user) => user.refreshTokens)
+  user: User;
+}
+
+@Entity()
+export class Deposit extends BaseEntity {
+  @Column({
+    type: 'decimal',
+    precision: 10,
+    scale: 3,
+    default: 0.0,
+    nullable: false,
+  })
+  money: string;
+
+  @ManyToOne(() => User, (user) => user.deposites)
   user: User;
 }

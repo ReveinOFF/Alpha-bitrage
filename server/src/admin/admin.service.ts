@@ -78,4 +78,14 @@ export class AdminService {
 
     return wd;
   }
+
+  async updateWd(data) {
+    return await this.wdRepository.update(data.id, { status: data.status });
+  }
+
+  async getAllUsers() {
+    return await this.usersRepository.find({
+      relations: ['routes', 'withdrawals'],
+    });
+  }
 }
