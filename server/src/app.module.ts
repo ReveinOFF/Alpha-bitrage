@@ -5,7 +5,7 @@ import { AuthenticationModule } from './authentication/authentication.module';
 import * as path from 'path';
 import { JwtModule } from '@nestjs/jwt';
 import { ServeStaticModule } from '@nestjs/serve-static';
-import { RoutesModule } from './home/routes.module';
+import { RoutesModule } from './routes/routes.module';
 import { HelpModule } from './help/help.module';
 import { AdminModule } from './admin/admin.module';
 import { WithdrawalsModule } from './withdrawals/withdrawals.module';

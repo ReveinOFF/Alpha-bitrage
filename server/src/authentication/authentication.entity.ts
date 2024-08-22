@@ -1,4 +1,4 @@
-import { Routes } from 'src/home/routes.entity';
+import { Routes } from 'src/routes/routes.entity';
 import { Notification } from 'src/notifications/notifications.entity';
 import { BaseEntity } from 'src/utils/base-entity';
 import { Role } from 'src/utils/enum';

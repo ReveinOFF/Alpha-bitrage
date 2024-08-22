@@ -125,6 +125,7 @@ export class AuthenticationService {
       referralCode: ref,
       referredBy: referrer,
       password: hashPassword,
+      name: dto.email.split('@')[0],
     });
 
     await this.usersRepository.save(newUser);
