@@ -8,6 +8,7 @@ import {
   Param,
   Post,
   Put,
+  Query,
   Request,
   UseGuards,
 } from '@nestjs/common';
@@ -65,5 +66,12 @@ export class AdminController {
   @HttpCode(HttpStatus.OK)
   async getAllUsers() {
     return await this.adminService.getAllUsers();
+  }
+
+  @Get('user')
+  @UseGuards(JwtAdminGuard)
+  @HttpCode(HttpStatus.OK)
+  async getUser(@Query('q') id: number) {
+    return await this.adminService.getUser(id);
   }
 }

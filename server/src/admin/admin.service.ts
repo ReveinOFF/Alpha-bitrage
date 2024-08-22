@@ -88,4 +88,11 @@ export class AdminService {
       relations: ['routes', 'withdrawals'],
     });
   }
+
+  async getUser(id: number) {
+    return await this.usersRepository.findOne({
+      where: { id },
+      relations: ['routes', 'withdrawals', 'deposites'],
+    });
+  }
 }

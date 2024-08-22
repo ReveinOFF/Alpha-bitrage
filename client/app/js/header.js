@@ -20,7 +20,13 @@ async function logout() {
 if (
 	window.location.pathname !== "/sign-up.html" &&
 	window.location.pathname !== "/sign-in.html" &&
-	window.location.pathname !== "/refer.html"
+	window.location.pathname !== "/refer.html" &&
+	window.location.pathname !== "/admin.html" &&
+	window.location.pathname !== "/admin-user.html" &&
+	window.location.pathname !== "/admin-user-page.html" &&
+	window.location.pathname !== "/admin-guide.html" &&
+	window.location.pathname !== "/admin-announce.html" &&
+	window.location.pathname !== "/admin-withdrawal.html"
 )
 	document.addEventListener("DOMContentLoaded", async () => {
 		const image = document.querySelector(".user-avatar");

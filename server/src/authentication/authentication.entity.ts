@@ -83,7 +83,7 @@ export class User extends BaseEntity {
   @OneToMany(() => Notification, (nf) => nf.user)
   notifications: Notification[];
 
-  @OneToMany(() => Notification, (d) => d.user)
+  @OneToMany(() => Deposit, (d) => d.user)
   deposites: Deposit[];
 
   @OneToMany(() => Withdrawals, (wd) => wd.user)
