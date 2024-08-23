@@ -2,12 +2,13 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as fs from 'fs/promises';
 import * as path from 'path';
-import { Routes } from './routes.entity';
-import { Repository } from 'typeorm';
+import { ButtonClick, Routes } from './routes.entity';
+import { MoreThan, Repository } from 'typeorm';
 import { TokenDTO } from 'src/authentication/authentication.dto';
 import { CreateRoutesDTO } from './routes.dto';
 import { User } from 'src/authentication/authentication.entity';
 import { Status } from 'src/utils/enum';
+import { SchedulerRegistry } from '@nestjs/schedule';
 
 @Injectable()
 export class RoutesService {
@@ -16,6 +17,9 @@ export class RoutesService {
     private routesRepository: Repository<Routes>,
     @InjectRepository(User)
     private usersRepository: Repository<User>,
+    @InjectRepository(ButtonClick)
+    private buttonClickRepository: Repository<ButtonClick>,
+    private schedulerRegistry: SchedulerRegistry,
   ) {}
 
   private async getData() {
@@ -131,6 +135,61 @@ export class RoutesService {
     return [...top, ...additionalData];
   }
 
+  private scheduleTaskForRouter(routerId: number) {
+    const timeout = setTimeout(
+      async () => {
+        const router = await this.routesRepository.findOne({
+          where: { id: routerId },
+        });
+
+        if (router) {
+          const profit = router.quantity * (parseFloat(router.spread) / 100);
+
+          const profitAfterCommission = profit - profit * 0.05;
+
+          router.status = Status.SUCCESS;
+          router.profit = profitAfterCommission.toString();
+
+          await this.routesRepository.save(router);
+        }
+      },
+      3 * 60 * 60 * 1000,
+    );
+
+    this.schedulerRegistry.addTimeout(`task-${routerId}`, timeout);
+  }
+
+  private async handleButtonClick(userId: number): Promise<void> {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    let click = await this.buttonClickRepository.findOne({
+      where: {
+        user: { id: userId },
+        clickTime: MoreThan(today),
+      },
+    });
+
+    if (click && click.clickCount >= 3) {
+      throw new HttpException(
+        'You can only click the button 3 times a day',
+        HttpStatus.CONFLICT,
+      );
+    }
+
+    if (!click) {
+      click = this.buttonClickRepository.create({
+        user: { id: userId },
+        clickTime: new Date(),
+        clickCount: 1,
+      });
+    } else {
+      click.clickCount += 1;
+    }
+
+    await this.buttonClickRepository.save(click);
+  }
+
   //   -------------
 
   async getMainRoutes() {
@@ -185,16 +244,16 @@ export class RoutesService {
   }
 
   async createRouter(data: CreateRoutesDTO, user: TokenDTO) {
-    const findUser = await this.usersRepository.findOneOrFail({
-      where: { id: user.id },
-    });
+    await this.handleButtonClick(user.id);
 
     const create = await this.routesRepository.create({
       ...data,
-      user: findUser,
+      user: { id: user.id },
     });
 
     const save = await this.routesRepository.save(create);
+
+    this.scheduleTaskForRouter(save.id);
 
     const res = {
       ...save,

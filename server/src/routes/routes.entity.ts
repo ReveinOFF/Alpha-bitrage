@@ -62,3 +62,23 @@ export class Routes extends BaseEntity {
   })
   user?: User;
 }
+
+@Entity()
+export class ButtonClick extends BaseEntity {
+  @Column({
+    default: 0,
+  })
+  clickCount: number;
+
+  @Column({
+    type: 'timestamptz',
+    nullable: false,
+  })
+  clickTime: Date;
+
+  @ManyToOne(() => User, (user) => user.buttonClick, {
+    cascade: true,
+    onDelete: 'SET NULL',
+  })
+  user?: User;
+}

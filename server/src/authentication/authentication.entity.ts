@@ -1,4 +1,4 @@
-import { Routes } from 'src/routes/routes.entity';
+import { ButtonClick, Routes } from 'src/routes/routes.entity';
 import { Notification } from 'src/notifications/notifications.entity';
 import { BaseEntity } from 'src/utils/base-entity';
 import { Role } from 'src/utils/enum';
@@ -77,17 +77,35 @@ export class User extends BaseEntity {
   })
   refreshTokens: RefreshToken[];
 
-  @OneToMany(() => Routes, (rout) => rout.user)
+  @OneToMany(() => Routes, (rout) => rout.user, {
+    cascade: true,
+    onDelete: 'CASCADE',
+  })
   routes: User[];
 
-  @OneToMany(() => Notification, (nf) => nf.user)
+  @OneToMany(() => Notification, (nf) => nf.user, {
+    cascade: true,
+    onDelete: 'CASCADE',
+  })
   notifications: Notification[];
 
-  @OneToMany(() => Deposit, (d) => d.user)
+  @OneToMany(() => Deposit, (d) => d.user, {
+    cascade: true,
+    onDelete: 'CASCADE',
+  })
   deposites: Deposit[];
 
-  @OneToMany(() => Withdrawals, (wd) => wd.user)
+  @OneToMany(() => Withdrawals, (wd) => wd.user, {
+    cascade: true,
+    onDelete: 'CASCADE',
+  })
   withdrawals: Withdrawals[];
+
+  @OneToMany(() => ButtonClick, (bc) => bc.user, {
+    cascade: true,
+    onDelete: 'CASCADE',
+  })
+  buttonClick: ButtonClick[];
 
   @Column({
     type: 'enum',
