@@ -12,8 +12,6 @@ async function fetchData() {
 
 	const premiumMinHide = document.querySelector(".route--premium");
 
-	const { premium } = jwtDecode(localStorage.getItem("token"));
-
 	const values = [
 		"route-item__icon--red",
 		"route-item__icon--yellow",
@@ -21,6 +19,12 @@ async function fetchData() {
 	];
 
 	const convertProcent = (value) => Math.floor(value * 10) / 10;
+
+	const token = localStorage.getItem("token");
+
+	let premium = false;
+
+	if (token?.length <= 0) premium = jwtDecode(token).premium;
 
 	if (premium) premiumMinHide.classList.remove("route--premium");
 

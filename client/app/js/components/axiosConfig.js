@@ -16,9 +16,6 @@ const refreshToken = async (oldRefToken) => {
 		setCookie("refreshToken", refreshToken, 7);
 		localStorage.setItem("token", token);
 
-		console.log(token);
-		console.log(refreshToken);
-
 		return token;
 	} catch (error) {
 		console.error("Error when updating tokens:", error);
@@ -30,6 +27,12 @@ instance.interceptors.request.use(
 	(config) => {
 		const token = localStorage.getItem("token");
 		const refToken = getCookie("refreshToken");
+
+		if (token?.length <= 0) {
+			deleteCookie("refreshToken");
+			localStorage.removeItem("token");
+			return Promise.reject(new Error("No token found"));
+		}
 
 		if (token && refToken) {
 			config.headers["Authorization"] = `Bearer ${token}`;
@@ -45,13 +48,20 @@ instance.interceptors.response.use(
 	async (error) => {
 		const { response } = error;
 		if (response && response.status === 401) {
+			const refToken = getCookie("refreshToken");
+
+			if (!refToken) {
+				deleteCookie("refreshToken");
+				localStorage.removeItem("token");
+				return Promise.reject(error);
+			}
+
 			try {
-				const refToken = getCookie("refreshToken");
-				const token = await refreshToken(refToken);
+				await refreshToken(refToken);
 
-				error.config.headers["Authorization"] = `Bearer ${token}`;
+				location.reload();
 
-				return instance.request(error.config);
+				return Promise.resolve();
 			} catch (err) {
 				deleteCookie("refreshToken");
 				localStorage.removeItem("token");

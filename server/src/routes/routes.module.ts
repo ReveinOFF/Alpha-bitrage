@@ -5,13 +5,13 @@ import { RoutesService } from './routes.service';
 import { RoutesController } from './routes.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Routes, ButtonClick } from './routes.entity';
-import { User } from 'src/authentication/authentication.entity';
 import { ScheduleModule } from '@nestjs/schedule';
+import { NotificationModule } from 'src/notifications/notifications.module';
 
 @Module({
   imports: [
     ScheduleModule.forRoot(),
-    TypeOrmModule.forFeature([Routes, User, ButtonClick]),
+    TypeOrmModule.forFeature([Routes, ButtonClick]),
     JwtModule.registerAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
@@ -22,6 +22,7 @@ import { ScheduleModule } from '@nestjs/schedule';
         },
       }),
     }),
+    NotificationModule,
   ],
   providers: [RoutesService],
   controllers: [RoutesController],

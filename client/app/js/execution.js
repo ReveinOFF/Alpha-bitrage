@@ -22,14 +22,14 @@ async function openPair() {
 	const executionSell = document.querySelector(".execution-form__sell");
 	const executionNames = document.querySelectorAll(".exchange-field__name");
 
+	const convertProcent = (value) => Math.floor(value * 10) / 10;
+
 	executionPair.textContent = `${from.toLocaleUpperCase()}_${to.toLocaleUpperCase()}`;
-	executionProfit.textContent = `${spread}%`;
+	executionProfit.textContent = `${convertProcent(spread)}%`;
 	executionBuy.textContent = `$${buy}`;
 	executionSell.textContent = `$${sell}`;
 	executionNames.item(0).textContent = from.toLocaleUpperCase();
 	executionNames.item(1).textContent = to.toLocaleUpperCase();
-
-	const convertProcent = (value) => Math.floor(value * 10) / 10;
 
 	executionSubmit.addEventListener("click", async () => {
 		executionSubmit.disabled = true;

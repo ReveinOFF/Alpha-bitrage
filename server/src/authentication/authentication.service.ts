@@ -13,6 +13,7 @@ import {
   TokenDTO,
 } from './authentication.dto';
 import { plainToClass } from 'class-transformer';
+import { NotificationsService } from 'src/notifications/notifications.service';
 // import * as nodemailer from 'nodemailer';
 
 @Injectable()
@@ -25,6 +26,7 @@ export class AuthenticationService {
     @InjectRepository(RefreshToken)
     private refreshTokenRepository: Repository<RefreshToken>,
     private readonly jwtService: JwtService,
+    private readonly nfService: NotificationsService,
   ) {
     // this.transporter = nodemailer.createTransport({
     //   host: 'smtp.example.com',
@@ -129,6 +131,11 @@ export class AuthenticationService {
     });
 
     await this.usersRepository.save(newUser);
+
+    await this.nfService.createNf({
+      user: { id: newUser.id },
+      htmlContent: `has just registered.`,
+    });
 
     const refreshToken = await this.createRefreshToken(newUser);
 

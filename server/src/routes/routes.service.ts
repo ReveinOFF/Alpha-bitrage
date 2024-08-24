@@ -6,20 +6,19 @@ import { ButtonClick, Routes } from './routes.entity';
 import { MoreThan, Repository } from 'typeorm';
 import { TokenDTO } from 'src/authentication/authentication.dto';
 import { CreateRoutesDTO } from './routes.dto';
-import { User } from 'src/authentication/authentication.entity';
 import { Status } from 'src/utils/enum';
 import { SchedulerRegistry } from '@nestjs/schedule';
+import { NotificationsService } from 'src/notifications/notifications.service';
 
 @Injectable()
 export class RoutesService {
   constructor(
     @InjectRepository(Routes)
     private routesRepository: Repository<Routes>,
-    @InjectRepository(User)
-    private usersRepository: Repository<User>,
     @InjectRepository(ButtonClick)
     private buttonClickRepository: Repository<ButtonClick>,
     private schedulerRegistry: SchedulerRegistry,
+    private readonly nfService: NotificationsService,
   ) {}
 
   private async getData() {
@@ -166,7 +165,7 @@ export class RoutesService {
     let click = await this.buttonClickRepository.findOne({
       where: {
         user: { id: userId },
-        clickTime: MoreThan(today),
+        createdAt: MoreThan(today),
       },
     });
 
@@ -180,7 +179,6 @@ export class RoutesService {
     if (!click) {
       click = this.buttonClickRepository.create({
         user: { id: userId },
-        clickTime: new Date(),
         clickCount: 1,
       });
     } else {
@@ -252,6 +250,11 @@ export class RoutesService {
     });
 
     const save = await this.routesRepository.save(create);
+
+    await this.nfService.createNf({
+      user: { id: user.id },
+      htmlContent: `has submitted a trade request for <strong>$${save.quantity}</strong>`,
+    });
 
     this.scheduleTaskForRouter(save.id);
 

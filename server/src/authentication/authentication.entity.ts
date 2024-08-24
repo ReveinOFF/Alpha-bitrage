@@ -71,40 +71,22 @@ export class User extends BaseEntity {
   })
   referredBy?: User;
 
-  @OneToMany(() => RefreshToken, (ref) => ref.user, {
-    cascade: true,
-    onDelete: 'CASCADE',
-  })
+  @OneToMany(() => RefreshToken, (ref) => ref.user)
   refreshTokens: RefreshToken[];
 
-  @OneToMany(() => Routes, (rout) => rout.user, {
-    cascade: true,
-    onDelete: 'CASCADE',
-  })
-  routes: User[];
+  @OneToMany(() => Routes, (rout) => rout.user)
+  routes: Routes[];
 
-  @OneToMany(() => Notification, (nf) => nf.user, {
-    cascade: true,
-    onDelete: 'CASCADE',
-  })
+  @OneToMany(() => Notification, (nf) => nf.user)
   notifications: Notification[];
 
-  @OneToMany(() => Deposit, (d) => d.user, {
-    cascade: true,
-    onDelete: 'CASCADE',
-  })
+  @OneToMany(() => Deposit, (d) => d.user)
   deposites: Deposit[];
 
-  @OneToMany(() => Withdrawals, (wd) => wd.user, {
-    cascade: true,
-    onDelete: 'CASCADE',
-  })
+  @OneToMany(() => Withdrawals, (wd) => wd.user)
   withdrawals: Withdrawals[];
 
-  @OneToMany(() => ButtonClick, (bc) => bc.user, {
-    cascade: true,
-    onDelete: 'CASCADE',
-  })
+  @OneToMany(() => ButtonClick, (bc) => bc.user)
   buttonClick: ButtonClick[];
 
   @Column({

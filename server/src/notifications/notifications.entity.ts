@@ -9,9 +9,6 @@ export class Notification extends BaseEntity {
   })
   htmlContent: string;
 
-  @ManyToOne(() => User, (user) => user.notifications, {
-    cascade: true,
-    onDelete: 'SET NULL',
-  })
+  @ManyToOne(() => User, (user) => user.notifications)
   user: User;
 }

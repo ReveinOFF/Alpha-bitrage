@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { RefreshToken, User } from './authentication.entity';
 import { JwtModule } from '@nestjs/jwt';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { NotificationModule } from 'src/notifications/notifications.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         },
       }),
     }),
+    NotificationModule,
   ],
   providers: [AuthenticationService],
   controllers: [AuthenticationController],

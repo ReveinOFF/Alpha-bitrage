@@ -40,7 +40,6 @@ if (
 		const money2 = document.querySelector(".small-button--balance");
 
 		const premium = document.querySelector(".status-label");
-		const { premium: premiumToken } = jwtDecode(localStorage.getItem("token"));
 
 		const logout1 = document.querySelector(".logout1");
 		const logout2 = document.querySelector(".logout2");
@@ -65,10 +64,17 @@ if (
 						res.data.money === "0"
 							? MoneyConvert(res.data.money)
 							: res.data.money;
-
-				if (premium && premiumToken) premium.style.display = "none";
 			}
 		});
+
+		try {
+			const token = localStorage.getItem("token");
+			const { premium: premiumToken } = jwtDecode(token);
+			if (premium && premiumToken) premium.style.display = "none";
+		} catch (error) {
+			console.error("Ошибка при декодировании токена:", error);
+			return;
+		}
 
 		logout1.addEventListener("click", async () => logout());
 		logout2.addEventListener("click", async () => logout());

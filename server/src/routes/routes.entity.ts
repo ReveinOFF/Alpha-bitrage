@@ -70,15 +70,6 @@ export class ButtonClick extends BaseEntity {
   })
   clickCount: number;
 
-  @Column({
-    type: 'timestamptz',
-    nullable: false,
-  })
-  clickTime: Date;
-
-  @ManyToOne(() => User, (user) => user.buttonClick, {
-    cascade: true,
-    onDelete: 'SET NULL',
-  })
+  @ManyToOne(() => User, (user) => user.buttonClick)
   user?: User;
 }
