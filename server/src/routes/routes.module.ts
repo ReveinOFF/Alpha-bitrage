@@ -7,11 +7,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Routes, ButtonClick } from './routes.entity';
 import { ScheduleModule } from '@nestjs/schedule';
 import { NotificationModule } from 'src/notifications/notifications.module';
+import { User } from 'src/authentication/authentication.entity';
 
 @Module({
   imports: [
     ScheduleModule.forRoot(),
-    TypeOrmModule.forFeature([Routes, ButtonClick]),
+    TypeOrmModule.forFeature([Routes, ButtonClick, User]),
     JwtModule.registerAsync({
       imports: [ConfigModule],
       inject: [ConfigService],

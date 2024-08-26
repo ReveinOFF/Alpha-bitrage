@@ -9,6 +9,7 @@ import { CreateRoutesDTO } from './routes.dto';
 import { Status } from 'src/utils/enum';
 import { SchedulerRegistry } from '@nestjs/schedule';
 import { NotificationsService } from 'src/notifications/notifications.service';
+import { User } from 'src/authentication/authentication.entity';
 
 @Injectable()
 export class RoutesService {
@@ -17,6 +18,8 @@ export class RoutesService {
     private routesRepository: Repository<Routes>,
     @InjectRepository(ButtonClick)
     private buttonClickRepository: Repository<ButtonClick>,
+    @InjectRepository(User)
+    private userRepository: Repository<User>,
     private schedulerRegistry: SchedulerRegistry,
     private readonly nfService: NotificationsService,
   ) {}
@@ -148,6 +151,15 @@ export class RoutesService {
 
           router.status = Status.SUCCESS;
           router.profit = profitAfterCommission.toString();
+          router.user.earnings = profitAfterCommission.toString();
+          router.user.earnings = (
+            parseFloat(router.user.earnings) +
+            router.quantity +
+            profitAfterCommission
+          ).toString();
+          router.user.money = (
+            parseFloat(router.user.money) + profitAfterCommission
+          ).toString();
 
           await this.routesRepository.save(router);
         }
@@ -242,14 +254,24 @@ export class RoutesService {
   }
 
   async createRouter(data: CreateRoutesDTO, user: TokenDTO) {
+    const usr = await this.userRepository.findOne({ where: { id: user.id } });
+
+    if (parseFloat(usr.money) < data.quantity)
+      throw new HttpException(
+        'You dont have the right amount of money',
+        HttpStatus.CONFLICT,
+      );
+
     await this.handleButtonClick(user.id);
 
     const create = await this.routesRepository.create({
       ...data,
-      user: { id: user.id },
+      user: usr,
     });
 
     const save = await this.routesRepository.save(create);
+
+    usr.money = (parseFloat(usr.money) - save.quantity).toString();
 
     await this.nfService.createNf({
       user: { id: user.id },

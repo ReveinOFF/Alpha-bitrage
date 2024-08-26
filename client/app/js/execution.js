@@ -32,6 +32,13 @@ async function openPair() {
 	executionNames.item(1).textContent = to.toLocaleUpperCase();
 
 	executionSubmit.addEventListener("click", async () => {
+		const hbalance = document.querySelector(".total-balance__info strong");
+
+		if (
+			parseFloat(hbalance.textContent.replace("$", "")) < parseInt(input.value)
+		)
+			return;
+
 		executionSubmit.disabled = true;
 		executionInput.style.display = "none";
 
@@ -48,6 +55,12 @@ async function openPair() {
 			})
 			.then((res) => {
 				if (res.status === 201) {
+					const hbv = (
+						parseFloat(hbalance.textContent.replace("$", "")) -
+						parseInt(input.value)
+					).toString();
+					hbalance.textContent = `${hbv} $`;
+
 					const listOpen = document.querySelector(
 						".open-rout-table .table-body"
 					);
