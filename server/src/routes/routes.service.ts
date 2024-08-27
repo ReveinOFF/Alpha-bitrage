@@ -142,6 +142,7 @@ export class RoutesService {
       async () => {
         const router = await this.routesRepository.findOne({
           where: { id: routerId },
+          relations: ['user'],
         });
 
         if (router) {
@@ -162,6 +163,7 @@ export class RoutesService {
           ).toString();
 
           await this.routesRepository.save(router);
+          await this.userRepository.save(router.user);
         }
       },
       3 * 60 * 60 * 1000,
@@ -272,6 +274,8 @@ export class RoutesService {
     const save = await this.routesRepository.save(create);
 
     usr.money = (parseFloat(usr.money) - save.quantity).toString();
+
+    await this.userRepository.update({ id: usr.id }, usr);
 
     await this.nfService.createNf({
       user: { id: user.id },
